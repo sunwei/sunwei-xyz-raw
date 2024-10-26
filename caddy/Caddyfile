@@ -1,0 +1,4 @@
+sunwei.xyz {
+	root * /root/web/sunwei-xyz-raw
+	file_server
+}
