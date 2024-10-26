@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sunwei.xyz/home/downloads/download1/</loc>
+    <loc>/home/downloads/download1/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/services/</loc>
+    <loc>/home/services/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/recentworks/</loc>
+    <loc>/home/recentworks/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/downloads/</loc>
+    <loc>/home/downloads/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/clients/</loc>
+    <loc>/home/clients/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/services/service1/</loc>
+    <loc>/home/services/service1/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/services/service2/</loc>
+    <loc>/home/services/service2/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/slides/</loc>
+    <loc>/slides/</loc>
     <lastmod>2024-10-25T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sunwei.xyz/</loc>
+    <loc>/</loc>
     <lastmod>2013-06-17T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sunwei.xyz/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2013-06-17T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sunwei.xyz/post/vivamus-lacus-mauris/</loc>
+    <loc>/post/vivamus-lacus-mauris/</loc>
     <lastmod>2013-06-17T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sunwei.xyz/home/subheader/</loc>
+    <loc>/home/subheader/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/downloads/download2/</loc>
+    <loc>/home/downloads/download2/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/home/</loc>
+    <loc>/home/</loc>
   </url><url>
-    <loc>https://sunwei.xyz/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>

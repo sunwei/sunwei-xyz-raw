@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>韦德说</title>
-    <link>https://sunwei.xyz/slides/</link>
+    <link>/slides/</link>
     <description>Recent content on 韦德说</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="https://sunwei.xyz/slides/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language><atom:link href="/slides/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://sunwei.xyz/slides/001-mvp/home/01.pre/</link>
+      <link>/slides/001-mvp/home/01.pre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sunwei.xyz/slides/001-mvp/home/01.pre/</guid>
+      <guid>/slides/001-mvp/home/01.pre/</guid>
       <description> 前情提要 为了兑现一句承诺，花了一年时间。2.8W, 为了不丢中国程序员脸&amp;hellip; 大家的反馈很积极，疑惑也很多 名字 发音：不是念&amp;quot;呼狗&amp;quot;，要念&amp;quot;hiu狗&amp;quot; 长度：Hugoverse太长了（对照着Metaverse记就好记了） 定位 Hugoverse和其它的工具有什么不一样? (vuepress, vitepress, mkdocs, hexo, nextjs, wordpress, astro, gatsby) Hugoverse和Hugo有什么不一样？ 文章的保存和拆分还是有点抽象。还是不够方便！ 进度：太慢了，等白嫖。开源项目，也可以直接上手 - github 价值： 重复造轮子！ 这有什么用？！还不如跟热度，搞流量赚钱！ 议程 定位 价值 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sunwei.xyz/slides/001-mvp/home/02.market/</link>
+      <link>/slides/001-mvp/home/02.market/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sunwei.xyz/slides/001-mvp/home/02.market/</guid>
+      <guid>/slides/001-mvp/home/02.market/</guid>
       <description> 定位 内容一次编写，多次使用
 和Hugo比
 灵活的内容分发，主题应用。 更高的开发自由度。前后端解耦，Hugoverse 可以与任意前端结合，实现内容管理和前端开发的完全分离。 和其它工具比：
@@ -29,20 +29,20 @@ VuePress/VitePress/MkDocs/Hexo 和Hugo一样。但不是 Headless CMS。 WordPre
     
     <item>
       <title></title>
-      <link>https://sunwei.xyz/slides/001-mvp/home/03.value/</link>
+      <link>/slides/001-mvp/home/03.value/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sunwei.xyz/slides/001-mvp/home/03.value/</guid>
+      <guid>/slides/001-mvp/home/03.value/</guid>
       <description> 价值 找需求 提供服务 真实需求 - 愿意花钱 方便为学员提供专业服务介绍 - 私教课 非技术人员，自学HTML，自已买域名，自已购买和维护服务器（60 块/年） 服务 客户需求：让学员可以查看自己提供的商业服务，提高成单率。 用户画像：拥有个人品牌的专业人士，非技术背景。 MVP - 最小可行产品 目标： 让用户在喜欢的笔记软件上，编写私教服务介绍， 随时预览，一键发布。
 用户旅程 打开编辑器 - Obsidian，下载插件 - MDFriday 插件安装成功后，配置部署方式和信息 (待确认)。 由插件自动生成用户账号 - 用户名和账号。 新建笔记 在笔记上配置主题 点击侧边栏预览和发布 项目进展 Obsidian 插件 - 30% Hugoverse后端服务 - 90% 个人品牌主题 - Manual of Me - Demo </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sunwei.xyz/slides/001-mvp/home/04.idea/</link>
+      <link>/slides/001-mvp/home/04.idea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sunwei.xyz/slides/001-mvp/home/04.idea/</guid>
+      <guid>/slides/001-mvp/home/04.idea/</guid>
       <description>📢 紧急招募！商业创意群组需要你的助力！ 🙌
 🎯 我们期待你带来：
 奇思妙想：你的点子可能就是我们下一个突破口！ 技术见解：最新的技术实现、源码架构、商业化路径……这些都需要你的经验加持。 无价反馈：每一次进展、每一个方案，都希望与你共同探讨，群策群力！ 💡 加入福利：
@@ -51,10 +51,10 @@ VuePress/VitePress/MkDocs/Hexo 和Hugo一样。但不是 Headless CMS。 WordPre
     
     <item>
       <title></title>
-      <link>https://sunwei.xyz/slides/001-mvp/home/05.thanks/</link>
+      <link>/slides/001-mvp/home/05.thanks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sunwei.xyz/slides/001-mvp/home/05.thanks/</guid>
+      <guid>/slides/001-mvp/home/05.thanks/</guid>
       <description>谢谢 Peace</description>
     </item>
     
