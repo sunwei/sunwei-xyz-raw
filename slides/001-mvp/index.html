@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>韦德说</title>
+<meta name="description" content="MVP for Hugoverse">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/slides/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/slides/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/slides/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides/highlight-js/color-brewer.min.css">
+
+<style>
+ 
+.reveal section pre {
+  box-shadow: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid lightgrey;
+}
+.reveal section pre:hover {
+  border: 1px solid grey;
+  transition: border 0.3s ease;
+}
+.reveal section pre > code {
+  padding: 10px;
+}
+.reveal table {
+  font-size: 0.65em;
+}
+ 
+.reveal section.side-by-side h1 {
+  position: absolute;
+}
+.reveal section.side-by-side h1:first-of-type {
+  left: 25%;
+}
+.reveal section.side-by-side h1:nth-of-type(2) {
+  right: 25%;
+}
+.reveal section[data-background-image] a,
+.reveal section[data-background-image] p,
+.reveal section[data-background-image] h2 {
+  color: white;
+}
+.reveal section[data-background-image] a {
+  text-decoration: underline;
+}
+</style>
+
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="韦德说">韦德说</h1>
+<p>品源码，聊开源，实现商业闭环。</p>
+</section>
+
+  
+
+    
+<section data-noprocess data-shortcode-slide
+      id="pre">
+  
+<h2 id="前情提要">前情提要</h2>
+<ul>
+<li>为了兑现一句承诺，花了一年时间。<a href="https://www.bilibili.com/video/BV1BCxveDEDs">2.8W, 为了不丢中国程序员脸&hellip;</a></li>
+<li>大家的反馈很积极，疑惑也很多
+<ul>
+<li>名字
+<ul>
+<li>发音：不是念&quot;呼狗&quot;，要念&quot;hiu狗&quot;</li>
+<li>长度：Hugoverse太长了（对照着Metaverse记就好记了）</li>
+</ul>
+</li>
+<li>定位
+<ul>
+<li>Hugoverse和其它的工具有什么不一样? (vuepress, vitepress, mkdocs, hexo, nextjs, wordpress, astro, gatsby)</li>
+<li>Hugoverse和Hugo有什么不一样？</li>
+<li>文章的保存和拆分还是有点抽象。还是不够方便！</li>
+</ul>
+</li>
+<li>进度：太慢了，等白嫖。开源项目，也可以直接上手 - <a href="https://github.com/gohugonet/hugoverse">github</a></li>
+<li>价值：
+<ul>
+<li><strong>重复造轮子！</strong></li>
+<li><strong>这有什么用？！还不如跟热度，搞流量赚钱！</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="agenda">
+  
+<h2 id="议程">议程</h2>
+<ul>
+<li>定位</li>
+<li>价值</li>
+</ul>
+</section>
+    
+<section data-noprocess data-shortcode-slide
+      id="market">
+  
+<h1 id="定位">定位</h1>
+<p><strong>内容一次编写，多次使用</strong></p>
+<ul>
+<li>
+<p>和Hugo比</p>
+<ul>
+<li>灵活的内容分发，主题应用。</li>
+<li>更高的开发自由度。前后端解耦，Hugoverse 可以与任意前端结合，实现内容管理和前端开发的完全分离。</li>
+</ul>
+</li>
+<li>
+<p>和其它工具比：</p>
+<ul>
+<li>VuePress/VitePress/MkDocs/Hexo 和Hugo一样。但不是 Headless CMS。</li>
+<li>WordPress 传统 CMS，Hugoverse 静态生成的轻量和安全。</li>
+<li>Astro/Gatsby/Next.js 支持静态生成和服务器渲染，适合复杂交互，但复杂度较高，且生成速度较 Hugoverse 慢。</li>
+</ul>
+</li>
+</ul>
+</section>
+    
+<section data-noprocess data-shortcode-slide
+      id="value">
+  
+<h1 id="价值">价值</h1>
+<ul>
+<li>找需求</li>
+<li>提供服务</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="requirement">
+  
+<h1 id="真实需求---愿意花钱">真实需求 - 愿意花钱</h1>
+<ul>
+<li>方便为学员提供专业服务介绍 - 私教课</li>
+<li>非技术人员，自学HTML，自已买域名，自已购买和维护服务器（60 块/年）</li>
+</ul>
+<p><img src="laoyuan-req.png" alt="需求"></p>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="service">
+  
+<h1 id="服务">服务</h1>
+<ul>
+<li>客户需求：让学员可以查看自己提供的商业服务，提高成单率。</li>
+<li>用户画像：拥有个人品牌的专业人士，非技术背景。</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="mvp">
+  
+<h1 id="mvp---最小可行产品">MVP - 最小可行产品</h1>
+<p>目标： 让用户在喜欢的笔记软件上，编写私教服务介绍， 随时预览，一键发布。</p>
+<ul>
+<li>用户旅程
+<ul>
+<li>打开编辑器 - Obsidian，下载插件 - MDFriday</li>
+<li>插件安装成功后，配置部署方式和信息 (待确认)。</li>
+<li>由插件自动生成用户账号 - 用户名和账号。</li>
+<li>新建笔记</li>
+<li>在笔记上配置主题</li>
+<li>点击侧边栏预览和发布</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="program">
+  
+<h1 id="项目进展">项目进展</h1>
+<ul>
+<li><input disabled="" type="checkbox"> Obsidian 插件 - 30%</li>
+<li><input disabled="" type="checkbox"> Hugoverse后端服务 - 90%</li>
+<li><input checked="" disabled="" type="checkbox"> 个人品牌主题 - <a href="https://github.com/mdfriday/theme-manual-of-me/">Manual of Me</a> - <a href="https://demo.mdfriday.com/manualofme/">Demo</a></li>
+</ul>
+</section>
+    
+<section data-noprocess data-shortcode-slide
+      id="idea">
+  
+<p>📢 <strong>紧急招募！商业创意群组需要你的助力！</strong> 🙌</p>
+<p>🎯 <strong>我们期待你带来：</strong></p>
+<ul>
+<li><strong>奇思妙想</strong>：你的点子可能就是我们下一个突破口！</li>
+<li><strong>技术见解</strong>：最新的技术实现、源码架构、商业化路径……这些都需要你的经验加持。</li>
+<li><strong>无价反馈</strong>：每一次进展、每一个方案，都希望与你共同探讨，群策群力！</li>
+</ul>
+<p>💡 <strong>加入福利</strong>：</p>
+<ul>
+<li>第一时间知晓项目的最新动态</li>
+<li>亲身参与商业化探索，体验从想法到落地的全程；</li>
+<li>当然，群内也会不断分享技术干货、架构剖析，助力你的个人成长！</li>
+</ul>
+<p>期待每一个有热情的你！快来吧 ：）</p>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      id="qrcode">
+  
+<p><img src="qrcode.jpg" alt="Group 二维码"></p>
+</section>
+    
+<section data-noprocess data-shortcode-slide
+      id="thanks">
+  
+<h1 id="谢谢">谢谢</h1>
+<p>Peace</p>
+</section>
+
+</div>
+      <div class="line top"></div>
+<div class="line bottom"></div>
+<div class="line left"></div>
+<div class="line right"></div>
+
+    </div>
+<script type="text/javascript" src=/slides/reveal-hugo/object-assign.js></script>
+
+
+<script src="/slides/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/slides/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/slides/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {"history":true,"templates":{"grey":{"background":"#424242","transition":"convex"}}};
+  var revealHugoPageParams = {"custom_theme":"reveal-hugo/themes/robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"templates":{"hotpink":{"background":"#FF4081","class":"hotpink"}},"transition":"slide","transition_speed":"fast"};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+    
+
+
+<script type="text/javascript">
+
+Reveal.on('slidechanged', function(event) {
+  console.log("🎞️ Slide is now " + event.indexh);
+});
+</script>
+
+    
+  </body>
+</html>
