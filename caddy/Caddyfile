@@ -1,18 +1,17 @@
 {
-    # 全局日志配置
-    log {
-        output file /var/log/caddy/access.log
-        format json
-    }
+	# 全局日志配置
+	log {
+		output file /var/log/caddy/access.log
+		format json
+	}
 }
 
 sunwei.xyz {
-    root * /root/web/sunwei-xyz-raw
-    file_server
+	root * /root/web/sunwei-xyz-raw
+	file_server
 
-    # 添加一个路由规则，将 /mdfriday 路径的请求转发到 127.0.0.1:1314
-    handle_path /mdfriday/* {
-        rewrite * /{http.request.uri.path[9:]}
-        reverse_proxy 127.0.0.1:1314
-    }
+	# 添加一个路由规则，将 /mdfriday 路径的请求转发到 127.0.0.1:1314
+	handle_path /mdfriday/* {
+		reverse_proxy 127.0.0.1:1314
+	}
 }
