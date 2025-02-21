@@ -2,40 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/home/downloads/download1/</loc>
+    <loc>/categories/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/services/</loc>
+    <loc>/tags/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/recentworks/</loc>
+    <loc>/portfolio/portfolio1.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/downloads/</loc>
+    <loc>/services/service1.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/clients/</loc>
+    <loc>/social/social1.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/services/service1/</loc>
+    <loc>/portfolio/portfolio2.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/services/service2/</loc>
+    <loc>/services/service2.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/slides/</loc>
-    <lastmod>2024-10-25T12:00:00+00:00</lastmod>
+    <loc>/social/social2.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <loc>/portfolio/portfolio3.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <loc>/services/service3.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/post/vivamus-lacus-mauris/</loc>
-    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <loc>/services/service4.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/subheader/</loc>
+    <loc>/social/social4.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>/social/social7.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/downloads/download2/</loc>
+    <loc>/social/social9.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/home/</loc>
+    <loc>/social/social11.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>/about/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/about/contact.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/downloads/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/links.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/portfolio/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/posts/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/posts/002.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/privacy_terms.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/services/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/social/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/index.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/posts/001.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/about/me.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/downloads/download1.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/mdfriday.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
+  </url><url>
+    <loc>/subheader.html</loc>
+    <lastmod>2025-02-11T14:47:19+08:00</lastmod>
   </url>
 </urlset>
