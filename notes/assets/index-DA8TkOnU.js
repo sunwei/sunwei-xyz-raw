@@ -2131,7 +2131,7 @@ code.hljs {
 `,markdownStyles=[{name:"github",css:githubStyle},{name:"newspaper",css:newspaperStyle},{name:"poster",css:posterStyle},{name:"slim",css:slimStyle},{name:"note",css:noteStyle},{name:"tw",css:twStyle}],loadCSS=o=>{var e;return(e=markdownStyles.find(s=>s.name===o))==null?void 0:e.css},cardBanner=`{{< cardBanner
 
 logo="不黑学长"
-avatar="https://sunwei.xyz/avatar.png"
+avatar="https://notes.sunwei.xyz/avatar.png"
 mainTitle="让完播率>50% (3/3)"
 subtitle="6种文案公式"
 description="爆款拆解/爆款要素/文案结构"
