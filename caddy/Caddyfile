@@ -18,10 +18,15 @@ notes.sunwei.xyz {
 
 # 子域名配置，将所有请求转发到 127.0.0.1:1314
 mdfriday.sunwei.xyz {
-    encode identity  # 关闭压缩
     reverse_proxy 127.0.0.1:1314 {
         transport http {
             versions h1
         }
     }
+
+    # 防止压缩相关干扰
+    header {
+        -Content-Encoding
+    }
 }
+
