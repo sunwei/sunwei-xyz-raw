@@ -18,35 +18,5 @@ notes.sunwei.xyz {
 
 # 子域名配置，将所有请求转发到 127.0.0.1:1314
 mdfriday.sunwei.xyz {
-    # Disable HTTP/2 between Caddy and clients to eliminate protocol downgrade issues
-    protocols h1
-    
-    # Reverse proxy configuration
-    reverse_proxy 127.0.0.1:1314 {
-        transport http {
-            versions 1.1
-            read_timeout 60s
-            write_timeout 60s
-            dial_timeout 10s
-            response_header_timeout 30s
-        }
-        
-        # Fix the Host header formatting
-        header_up Host 127.0.0.1:1314
-        
-        # Ensure clean headers
-        header_up X-Real-IP {remote_host}
-        header_down -Transfer-Encoding
-        header_down -Content-Encoding
-        
-        # Health checks to ensure backend is available
-        health_timeout 5s
-    }
-    
-    # Enable detailed debug logging for this host
-    log {
-        output file /var/log/caddy/mdfriday-debug.log
-        format json
-        level DEBUG
-    }
+    reverse_proxy 127.0.0.1:1314
 }
