@@ -23,10 +23,5 @@ mdfriday.sunwei.xyz {
             versions h1
         }
     }
-
-    # 防止压缩相关干扰
-    header {
-        -Content-Encoding
-    }
 }
 
