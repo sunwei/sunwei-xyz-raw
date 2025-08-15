@@ -620,7 +620,7 @@ document.addEventListener('visibilitychange', function() {
 
 // 自动生日祝福
 setTimeout(() => {
-    showCelebrationMessage('🎉 小米12岁生日快乐！愿你永远开朗活泼！', 3000);
+    showCelebrationMessage('🎉 小米13岁生日快乐！愿你永远开朗活泼！', 3000);
 }, 2000);
 
 // 定期显示鼓励消息
@@ -628,7 +628,7 @@ setInterval(() => {
     const messages = [
         '🌟 小米真棒！',
         '💖 愿你每天都开心！',
-        '🎈 12岁的你最美丽！',
+        '🎈 13岁的你最美丽！',
         '🦄 像独角兽一样闪闪发光！',
         '🌈 彩虹般的美好未来等着你！'
     ];
