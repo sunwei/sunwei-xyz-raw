@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 小米生日快乐！</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="card-container">
+        <!-- 背景装饰 -->
+        <div class="background-decorations">
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="balloon balloon-3"></div>
+            <div class="balloon balloon-4"></div>
+            <div class="balloon balloon-5"></div>
+            <div class="confetti"></div>
+            <div class="stars"></div>
+        </div>
+
+        <!-- 主卡片 -->
+        <div class="birthday-card">
+            <!-- 卡片头部 -->
+            <div class="card-header">
+                <div class="rainbow-banner">
+                    <span class="banner-text">🌈 Happy Birthday 🌈</span>
+                </div>
+                <div class="age-badge">
+                    <span class="age-number">13</span>
+                    <span class="age-text">岁啦！</span>
+                </div>
+            </div>
+
+            <!-- 主要内容 -->
+            <div class="card-content">
+                <div class="name-section">
+                    <h1 class="name">小米</h1>
+                    <div class="sparkles">
+                        <i class="fas fa-star spark-1"></i>
+                        <i class="fas fa-star spark-2"></i>
+                        <i class="fas fa-star spark-3"></i>
+                    </div>
+                </div>
+
+                <div class="cake-section">
+                    <div class="birthday-cake">
+                        <div class="cake-base"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-top"></div>
+                        <div class="candles">
+                            <div class="candle candle-1">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle candle-2">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle candle-3">
+                                <div class="flame"></div>
+                            </div>
+                        </div>
+                        <div class="cake-decorations">
+                            <div class="cherry cherry-1">🍒</div>
+                            <div class="cherry cherry-2">🍓</div>
+                            <div class="cherry cherry-3">🫐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-section">
+                    <p class="birthday-message">
+                        亲爱的小米，<br>
+                        愿你的12岁生日充满欢声笑语！<br>
+                        像彩虹一样绚烂，像星星一样闪耀✨<br>
+                        健康快乐每一天，梦想都能实现！
+                    </p>
+                </div>
+
+                <div class="gifts-section">
+                    <div class="gift-box gift-1">
+                        <div class="gift-top"></div>
+                        <div class="gift-bottom"></div>
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow"></div>
+                    </div>
+                    <div class="gift-box gift-2">
+                        <div class="gift-top"></div>
+                        <div class="gift-bottom"></div>
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow"></div>
+                    </div>
+                    <div class="gift-box gift-3">
+                        <div class="gift-top"></div>
+                        <div class="gift-bottom"></div>
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片底部 -->
+            <div class="card-footer">
+                <div class="party-emojis">
+                    <span class="emoji">🎈</span>
+                    <span class="emoji">🎂</span>
+                    <span class="emoji">🎁</span>
+                    <span class="emoji">🌟</span>
+                    <span class="emoji">🦄</span>
+                    <span class="emoji">🌈</span>
+                    <span class="emoji">💖</span>
+                </div>
+                <div class="date">
+                    <i class="fas fa-calendar-heart"></i>
+                    <span id="current-date"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 互动按钮 -->
+        <div class="interactive-buttons">
+            <button class="magic-button" onclick="createFireworks()">
+                <i class="fas fa-magic"></i>
+                点击放烟花
+            </button>
+            <button class="music-button" onclick="playBirthdaySong()">
+                <i class="fas fa-music"></i>
+                生日歌
+            </button>
+            <button class="wish-button" onclick="makeWish()">
+                <i class="fas fa-star"></i>
+                许愿
+            </button>
+        </div>
+    </div>
+
+    <!-- 烟花效果容器 -->
+    <div class="fireworks-container"></div>
+
+    <!-- 许愿弹窗 -->
+    <div class="wish-modal" id="wishModal">
+        <div class="wish-content">
+            <h3>🌟 许个生日愿望吧！</h3>
+            <textarea id="wishText" placeholder="写下你的生日愿望..."></textarea>
+            <div class="wish-buttons">
+                <button onclick="submitWish()">许愿成功！</button>
+                <button onclick="closeWish()">稍后再许</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
