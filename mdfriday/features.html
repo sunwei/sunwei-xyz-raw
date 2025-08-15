@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心功能 - MDFriday | Obsidian笔记发布插件</title>
+    <meta name="description" content="了解MDFriday插件的核心功能：右键发布、本地构建预览、多平台部署、丰富主题选择等强大特性。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="mdfriday.svg" alt="MDFriday" class="logo-img">
+                    <span>MDFriday</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="features.html" class="nav-link active">核心功能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="install.html" class="nav-link">安装指南</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://obsidian.md/plugins?search=friday#" class="nav-btn nav-btn-primary">免费试用</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>核心功能</span>
+                </div>
+                <div class="page-header-content">
+                    <h1 class="page-title">MDFriday 核心功能</h1>
+                    <p class="page-subtitle">
+                        在Obsidian中一键发布精美网站，让你的笔记触达更多读者
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 详细功能介绍 -->
+        <section class="features-detailed">
+            <div class="container">
+                <!-- 右键发布功能 -->
+                <div class="feature-section">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <h2>一键发布，简单高效</h2>
+                            <p>
+                                MDFriday深度集成到Obsidian的工作流程中。你只需要右键点击想要发布的文件夹或笔记，选择"Publish to Web"，侧边栏就会弹出发布设置面板。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> 支持发布单个笔记或整个文件夹</li>
+                                <li><i class="fas fa-check"></i> 自动识别笔记结构和链接关系</li>
+                                <li><i class="fas fa-check"></i> 保持Obsidian的双链和标签系统</li>
+                                <li><i class="fas fa-check"></i> 无需离开Obsidian环境</li>
+                            </ul>
+                        </div>
+                        <div class="feature-demo">
+                            <div class="demo-window">
+                                <div class="demo-header">
+                                    <div class="window-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="demo-title">Obsidian - 我的知识库</span>
+                                </div>
+                                <div class="demo-content">
+                                    <div class="file-explorer">
+                                        <div class="folder-item">
+                                            <i class="fas fa-folder-open"></i>
+                                            <span>技术笔记</span>
+                                        </div>
+                                        <div class="file-item">
+                                            <i class="fas fa-file-alt"></i>
+                                            <span>JavaScript基础.md</span>
+                                        </div>
+                                        <div class="file-item">
+                                            <i class="fas fa-file-alt"></i>
+                                            <span>React进阶.md</span>
+                                        </div>
+                                        <div class="context-menu-demo">
+                                            <div class="menu-item-demo">
+                                                <i class="fas fa-globe"></i>
+                                                <span>Publish to Web</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 本地预览功能 -->
+                <div class="feature-section reverse">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <h2>本地构建，所见即所得</h2>
+                            <p>
+                                在发布到线上之前，MDFriday会在本地构建网站并提供实时预览。你可以看到笔记在网站上的实际效果，确保一切都符合预期。
+                            </p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> 实时本地服务器预览</li>
+                                <li><i class="fas fa-check"></i> 支持热重载，修改即时显示</li>
+                                <li><i class="fas fa-check"></i> 完全离线工作，保护数据安全</li>
+                                <li><i class="fas fa-check"></i> 预览满意后再发布上线</li>
+                            </ul>
+                        </div>
+                        <div class="feature-demo">
+                            <div class="browser-window">
+                                <div class="browser-header">
+                                    <div class="browser-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <div class="address-bar">
+                                        <span>localhost:3000</span>
+                                    </div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="website-preview">
+                                        <div class="site-header">我的技术博客</div>
+                                        <div class="site-nav">首页 | 文章 | 关于</div>
+                                        <div class="site-content">
+                                            <h3>JavaScript基础</h3>
+                                            <p>这是一篇关于JavaScript基础知识的文章...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 多平台部署 -->
+                <div class="feature-section">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <h2>多平台部署，自由选择</h2>
+                            <p>
+                                MDFriday支持多种部署平台，你可以根据自己的需求选择最合适的托管方案。无论是免费的Netlify还是自己的服务器，都能轻松部署。
+                            </p>
+                            <div class="deployment-options">
+                                <div class="deploy-option supported">
+                                    <div class="deploy-icon netlify">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="deploy-info">
+                                        <h4>Netlify</h4>
+                                        <p>免费托管，自动HTTPS，全球CDN</p>
+                                        <span class="status supported">✅ 已支持</span>
+                                    </div>
+                                </div>
+                                <div class="deploy-option supported">
+                                    <div class="deploy-icon ftp">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="deploy-info">
+                                        <h4>FTP上传</h4>
+                                        <p>上传到你的服务器，完全掌控</p>
+                                        <span class="status supported">✅ 已支持</span>
+                                    </div>
+                                </div>
+                                <div class="deploy-option coming">
+                                    <div class="deploy-icon github">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="deploy-info">
+                                        <h4>GitHub Pages</h4>
+                                        <p>免费静态网站托管</p>
+                                        <span class="status coming">🔄 即将支持</span>
+                                    </div>
+                                </div>
+                                <div class="deploy-option coming">
+                                    <div class="deploy-icon vercel">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="deploy-info">
+                                        <h4>Vercel</h4>
+                                        <p>边缘计算，极速访问</p>
+                                        <span class="status coming">🔄 即将支持</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主题系统 -->
+                <div class="feature-section reverse">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <h2>丰富主题，完美兼容</h2>
+                            <p>
+                                MDFriday提供两大类主题：经典的Hugo风格主题和专门为Obsidian优化的主题。Obsidian主题完美支持各种原生插件，让你的笔记在网站上呈现最佳效果。
+                            </p>
+                            <div class="theme-categories">
+                                <div class="theme-category">
+                                    <h4><i class="fas fa-code"></i> Hugo风格主题</h4>
+                                    <ul>
+                                        <li>Academic - 学术研究专用</li>
+                                        <li>PaperMod - 简洁博客主题</li>
+                                        <li>Docsy - 专业文档主题</li>
+                                    </ul>
+                                </div>
+                                <div class="theme-category">
+                                    <h4><i class="fas fa-cube"></i> Obsidian优化主题</h4>
+                                    <ul>
+                                        <li>支持Dataview插件</li>
+                                        <li>支持Mermaid图表</li>
+                                        <li>支持Excalidraw绘图</li>
+                                        <li>支持所有codeblock插件</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-demo">
+                            <div class="theme-showcase">
+                                <div class="theme-preview">
+                                    <div class="theme-header">Academic主题</div>
+                                    <div class="theme-content">
+                                        <div class="academic-layout">
+                                            <div class="paper-title">研究论文标题</div>
+                                            <div class="paper-meta">作者 | 日期 | 期刊</div>
+                                            <div class="paper-abstract">摘要内容...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="theme-preview">
+                                    <div class="theme-header">Obsidian主题</div>
+                                    <div class="theme-content">
+                                        <div class="obsidian-layout">
+                                            <div class="note-title">我的笔记</div>
+                                            <div class="dataview-table">
+                                                <div class="table-header">Dataview表格</div>
+                                                <div class="table-row">文件1 | 日期1</div>
+                                                <div class="table-row">文件2 | 日期2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术优势 -->
+        <section class="technical-advantages">
+            <div class="container">
+                <div class="section-header">
+                    <h2>技术优势</h2>
+                    <p>MDFriday基于现代化技术栈，为用户提供最佳的使用体验</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>数据安全</h3>
+                        <p>本地构建，数据不上传到第三方服务器，完全保护你的隐私</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>性能优化</h3>
+                        <p>优化的构建引擎，大型知识库也能快速处理，构建速度提升40%</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>插件兼容</h3>
+                        <p>完美支持Obsidian生态，所有codeblock类型的插件都能正常显示</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>响应式设计</h3>
+                        <p>所有主题都完美适配移动设备，确保在任何设备上都有最佳体验</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO优化</h3>
+                        <p>自动生成SEO友好的HTML，帮助你的内容在搜索引擎中获得更好排名</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>版本控制</h3>
+                        <p>与Git完美集成，支持版本历史跟踪和协作开发</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区域 -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>开始使用MDFriday</h2>
+                    <p>在Obsidian社区插件中搜索"Friday"，立即体验一键发布的便捷</p>
+                    <div class="cta-buttons">
+                        <a href="https://obsidian.md/plugins?search=friday#" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            安装Friday插件
+                        </a>
+                        <a href="install.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-book"></i>
+                            查看安装指南
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="mdfriday.svg" alt="MDFriday" class="footer-logo-img">
+                        <span>MDFriday</span>
+                    </div>
+                    <p class="footer-description">
+                        MDFriday是#1 Obsidian笔记发布插件。我们让每个人都能在Obsidian中一键发布精美网站，数据安全，尊重每位创作者。
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="install.html">安装指南</a></li>
+                        <li><a href="https://obsidian.md/plugins?search=friday#">下载插件</a></li>
+                        <li><a href="coming-soon.html">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 MDFriday. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

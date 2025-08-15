@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDFriday - Obsidian笔记发布插件 | 你的笔记，你的网站</title>
+    <meta name="description" content="MDFriday - 专业的Obsidian笔记发布插件。右键笔记文件夹即可发布为精美网站，支持Hugo风格和Obsidian原生主题，本地构建预览，一键部署到Netlify、FTP等平台。数据安全，尊重创作者。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="mdfriday.svg" alt="MDFriday" class="logo-img">
+                    <span>MDFriday</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="features.html" class="nav-link">核心功能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="install.html" class="nav-link">安装指南</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://obsidian.md/plugins?search=friday#" class="nav-btn nav-btn-primary">免费试用</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面 -->
+    <main>
+        <!-- Hero区域 -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-plug"></i>
+                        <span>#1 Obsidian发布插件</span>
+                    </div>
+                    <h1 class="hero-title">
+                        在Obsidian中一键发布
+                        <span class="gradient-text">精美网站</span>
+                    </h1>
+                    <p class="hero-description">
+                        MDFriday是专业的Obsidian笔记发布插件。右键选择文件夹或笔记，即可发布为精美网站。本地构建，所见即所得，数据完全属于你。
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <span>右键文件夹即可发布网站</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>本地构建预览，所见即所得</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>数据安全，尊重每位创作者</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-demo">
+                    <div class="demo-container">
+                        <div class="demo-header">
+                            <div class="demo-tabs">
+                                <button class="demo-tab active" data-tab="install">安装插件</button>
+                                <button class="demo-tab" data-tab="publish">发布网站</button>
+                                <button class="demo-tab" data-tab="deploy">部署上线</button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-panel active" id="install-panel">
+                                <div class="plugin-install">
+                                    <div class="obsidian-interface">
+                                        <div class="obsidian-header">
+                                            <i class="fas fa-cube"></i>
+                                            <span>Obsidian - 社区插件</span>
+                                        </div>
+                                        <div class="plugin-search">
+                                            <input type="text" value="Friday" placeholder="搜索插件..." readonly>
+                                            <button class="search-btn">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                        <div class="plugin-result">
+                                            <div class="plugin-card">
+                                                <div class="plugin-info">
+                                                    <h4>Friday</h4>
+                                                    <p>将Obsidian笔记发布为精美网站</p>
+                                                    <div class="plugin-meta">
+                                                        <span class="author">by sunwei</span>
+                                                        <span class="version">v0.9.0</span>
+                                                    </div>
+                                                </div>
+                                                <button class="install-btn">安装</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-panel" id="publish-panel">
+                                <div class="publish-flow">
+                                    <div class="obsidian-sidebar">
+                                        <div class="folder-tree">
+                                            <div class="folder-item">
+                                                <i class="fas fa-folder-open"></i>
+                                                <span>我的知识库</span>
+                                                <div class="context-menu">
+                                                    <div class="menu-item highlighted">
+                                                        <i class="fas fa-globe"></i>
+                                                        <span>Publish to Web</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>技术笔记.md</span>
+                                            </div>
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>学习心得.md</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="publish-panel">
+                                        <h4>发布设置</h4>
+                                        <div class="setting-group">
+                                            <label>站点名称</label>
+                                            <input type="text" value="我的技术博客" placeholder="输入站点名称...">
+                                        </div>
+                                        <div class="setting-group">
+                                            <label>选择主题</label>
+                                            <select class="theme-selector">
+                                                <option>Hugo - Academic</option>
+                                                <option>Obsidian - Purple</option>
+                                                <option>Hugo - PaperMod</option>
+                                            </select>
+                                        </div>
+                                        <button class="preview-btn">
+                                            <i class="fas fa-eye"></i>
+                                            预览网站
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-panel" id="deploy-panel">
+                                <div class="deploy-options">
+                                    <div class="deploy-header">
+                                        <h4>选择部署平台</h4>
+                                        <p>预览满意后，选择你喜欢的部署方式</p>
+                                    </div>
+                                    <div class="deploy-platforms">
+                                        <div class="platform-card active">
+                                            <div class="platform-icon netlify">
+                                                <i class="fas fa-cloud"></i>
+                                            </div>
+                                            <h5>Netlify</h5>
+                                            <p>免费托管，自动HTTPS</p>
+                                            <div class="platform-status">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>已支持</span>
+                                            </div>
+                                        </div>
+                                        <div class="platform-card">
+                                            <div class="platform-icon ftp">
+                                                <i class="fas fa-server"></i>
+                                            </div>
+                                            <h5>FTP上传</h5>
+                                            <p>上传到你的服务器</p>
+                                            <div class="platform-status">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span>已支持</span>
+                                            </div>
+                                        </div>
+                                        <div class="platform-card">
+                                            <div class="platform-icon github">
+                                                <i class="fab fa-github"></i>
+                                            </div>
+                                            <h5>GitHub Pages</h5>
+                                            <p>免费静态网站托管</p>
+                                            <div class="platform-status coming">
+                                                <i class="fas fa-clock"></i>
+                                                <span>即将支持</span>
+                                            </div>
+                                        </div>
+                                        <div class="platform-card">
+                                            <div class="platform-icon vercel">
+                                                <i class="fas fa-bolt"></i>
+                                            </div>
+                                            <h5>Vercel</h5>
+                                            <p>边缘计算，极速访问</p>
+                                            <div class="platform-status coming">
+                                                <i class="fas fa-clock"></i>
+                                                <span>即将支持</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-footer">
+                            <a href="https://obsidian.md/plugins?search=friday#" class="btn-generate">
+                                <i class="fas fa-download"></i>
+                                下载Friday插件
+                            </a>
+                            <p class="demo-note">在Obsidian社区插件中搜索"Friday"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能特性区域 -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">在Obsidian中轻松发布网站</h2>
+                    <p class="section-subtitle">MDFriday插件让你在熟悉的Obsidian环境中，一键将笔记发布为专业网站</p>
+                </div>
+                <div class="features-showcase">
+                    <div class="main-feature-card">
+                        <div class="main-feature-content">
+                            <div class="main-feature-badge">
+                                <i class="fas fa-star"></i>
+                                <span>核心功能</span>
+                            </div>
+                            <h3>右键发布网站</h3>
+                            <p>在Obsidian中右键选中笔记文件夹或单个笔记，选择"Publish to Web"，即可开始发布流程。无需离开熟悉的编辑环境，让发布变得前所未有的简单。</p>
+                            <div class="main-feature-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>支持文件夹和单个笔记</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>保持双链和标签系统</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>自动识别笔记结构</span>
+                                </div>
+                            </div>
+                            <a href="https://youtu.be/2maPgW5uDCI?si=m1cnVRz1p5zSepDh" class="main-feature-btn">
+                                <i class="fas fa-play"></i>
+                                查看演示
+                            </a>
+                        </div>
+                        <div class="main-feature-demo">
+                            <div class="obsidian-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="mockup-title">Obsidian - 我的知识库</span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="file-tree-demo">
+                                        <div class="folder-demo active">
+                                            <i class="fas fa-folder-open"></i>
+                                            <span>技术笔记</span>
+                                            <div class="context-menu-popup">
+                                                <div class="menu-item-popup">
+                                                    <i class="fas fa-globe"></i>
+                                                    <span>Publish to Web</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="file-demo">
+                                            <i class="fas fa-file-alt"></i>
+                                            <span>JavaScript基础.md</span>
+                                        </div>
+                                        <div class="file-demo">
+                                            <i class="fas fa-file-alt"></i>
+                                            <span>React进阶.md</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="secondary-features">
+                        <div class="secondary-feature-card">
+                            <div class="secondary-feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="secondary-feature-content">
+                                <h4>本地构建预览</h4>
+                                <p>在本地构建和预览网站，所见即所得。确认效果满意后再上线。</p>
+                                <a href="features.html" class="secondary-feature-link">
+                                    了解更多 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="secondary-feature-card">
+                            <div class="secondary-feature-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="secondary-feature-content">
+                                <h4>多平台部署</h4>
+                                <p>支持Netlify、FTP等平台，即将支持GitHub Pages、Vercel等。</p>
+                                <a href="features.html" class="secondary-feature-link">
+                                    查看平台 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="secondary-feature-card">
+                            <div class="secondary-feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="secondary-feature-content">
+                                <h4>丰富主题选择</h4>
+                                <p>Hugo风格主题和Obsidian优化主题，支持原生插件显示。</p>
+                                <a href="themes.html" class="secondary-feature-link">
+                                    浏览主题 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="secondary-feature-card">
+                            <div class="secondary-feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="secondary-feature-content">
+                                <h4>数据安全保护</h4>
+                                <p>本地构建，数据不上传第三方服务器，完全保护你的隐私。</p>
+                                <a href="features.html" class="secondary-feature-link">
+                                    安全详情 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 视频示例区域 -->
+        <section class="video-examples">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">几分钟内将笔记转换为精美网站</h2>
+                    <p class="section-subtitle">轻松创建专业品质的个人网站。无需编程技能或复杂配置。</p>
+                </div>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="example-video">
+                            <div class="video-placeholder">
+                                <i class="fas fa-blog"></i>
+                                <span>个人博客示例</span>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="example-content">
+                            <h3>个人博客</h3>
+                            <p>几分钟内将你的笔记转换为专业博客。支持文章分类、标签系统、评论功能，打造完美的内容展示平台。</p>
+                            <a href="coming-soon.html" class="example-link">查看博客模板</a>
+                        </div>
+                    </div>
+                    <div class="example-card">
+                        <div class="example-video">
+                            <div class="video-placeholder">
+                                <i class="fas fa-book"></i>
+                                <span>技术文档示例</span>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="example-content">
+                            <h3>技术文档</h3>
+                            <p>将你的技术笔记和文档转换为专业的在线文档站点。支持代码高亮、搜索功能、目录导航，让知识分享更加高效。</p>
+                            <a href="coming-soon.html" class="example-link">查看文档模板</a>
+                        </div>
+                    </div>
+                    <div class="example-card">
+                        <div class="example-video">
+                            <div class="video-placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>知识库示例</span>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="example-content">
+                            <h3>知识库网站</h3>
+                            <p>构建个人或团队的知识库网站。支持全文搜索、知识图谱、标签关联，让你的知识体系化并便于分享。</p>
+                            <a href="coming-soon.html" class="example-link">查看知识库模板</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工作流程区域 -->
+        <section class="workflow">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">简单四步，从笔记到网站</h2>
+                    <p class="section-subtitle">在熟悉的Obsidian环境中，通过Friday插件轻松将笔记发布为专业网站——无需离开你的笔记应用。</p>
+                </div>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>安装Friday插件</h3>
+                            <p>在Obsidian的社区插件中搜索"Friday"，点击安装并启用。插件将集成到你的Obsidian界面中。</p>
+                        </div>
+                        <div class="step-visual">
+                            <div class="visual-placeholder">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>右键选择发布</h3>
+                            <p>右键点击你想要发布的笔记文件夹或单个笔记，选择"Publish to Web"。侧边功能栏将弹出发布设置面板。</p>
+                        </div>
+                        <div class="step-visual">
+                            <div class="visual-placeholder">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>配置和预览</h3>
+                            <p>给网站取名，选择主题（Hugo风格或Obsidian优化主题）。点击预览按钮在本地构建并查看网站效果。</p>
+                        </div>
+                        <div class="step-visual">
+                            <div class="visual-placeholder">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>一键部署上线</h3>
+                            <p>预览满意后，选择部署平台（已支持Netlify、FTP上传，即将支持GitHub Pages、Vercel等）。你的数据完全属于你。</p>
+                        </div>
+                        <div class="step-visual">
+                            <div class="visual-placeholder">
+                                <i class="fas fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户评价区域 -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">为什么Obsidian用户都在用MDFriday？</h2>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"右键发布网站太方便了，不用离开Obsidian就能分享笔记。"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>张明</h4>
+                                    <p>技术博主</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-category">个人博客</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"本地预览功能让我可以在上线前确认效果，非常贴心。"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>李小红</h4>
+                                    <p>产品经理</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-category">知识管理</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Obsidian主题支持原生插件，我的图表和公式都完美展示。"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>王强</h4>
+                                    <p>技术总监</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-category">技术文档</div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="nav-dot active" data-slide="0"></button>
+                    <button class="nav-dot" data-slide="1"></button>
+                    <button class="nav-dot" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 定价区域 -->
+        <section class="pricing" id="pricing" style="display: none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">选择适合您的方案</h2>
+                    <p class="section-subtitle">Friday插件基础功能免费，高级功能助力专业创作</p>
+                </div>
+                <div class="pricing-toggle">
+                    <span class="toggle-label">月付</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="pricing-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label">年付 <span class="discount">-20%</span></span>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>基础版</h3>
+                            <div class="pricing-price">
+                                <span class="price">免费</span>
+                            </div>
+                            <p class="pricing-description">适合个人用户体验</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>3个网站项目</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>5个基础主题</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>基础Markdown支持</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>最多100个页面</span>
+                            </div>
+                            <div class="feature-item disabled">
+                                <i class="fas fa-times"></i>
+                                <span>自定义域名</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn btn-secondary">免费开始</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">最受欢迎</div>
+                        <div class="pricing-header">
+                            <h3>专业版</h3>
+                            <div class="pricing-price">
+                                <span class="price monthly">¥99</span>
+                                <span class="price yearly hidden">¥79</span>
+                                <span class="period">/月</span>
+                            </div>
+                            <p class="pricing-description">适合专业创作者和小团队</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>无限网站项目</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>50+精美主题</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>完整Markdown支持</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Obsidian集成</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>自定义域名</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>优先客服支持</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn btn-primary">立即购买</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>企业版</h3>
+                            <div class="pricing-price">
+                                <span class="price">定制</span>
+                            </div>
+                            <p class="pricing-description">适合大型企业和团队</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>无限项目和页面</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>定制主题开发</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>私有部署</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>API接入</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>专属客户经理</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>SLA保障</span>
+                            </div>
+                        </div>
+                        <button class="pricing-btn btn-secondary">联系销售</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ区域 -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">常见问题</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>是否有免费的Markdown转网站服务可以使用？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，MDSite Pro提供免费版本，让您可以体验我们的核心功能。免费版包括3个网站项目的额度，以及5个基础主题和基础Markdown支持。对于更高级的功能和无限项目，我们提供灵活的付费方案。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>什么是Markdown转网站平台？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Markdown转网站平台是一种工具，可以将你的Markdown笔记转换为专业的网站，包含美观的样式、导航系统、搜索功能等，所有这些都无需编程知识。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何从笔记创建网站？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>MDSite Pro是一个领先的Markdown转网站平台，可以将你的笔记转换为美观的网站，支持多种主题和定制选项。只需上传您的Markdown文件，选择喜欢的主题，几分钟内您就能拥有一个精美、专业的网站，无需编程或服务器配置。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>使用平台生成的网站是否安全？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们非常注重数据安全。你的所有数据都完全属于你，包括笔记内容、网站源码和部署配置。我们支持私有部署，你可以选择任何云服务商或自建服务器。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>支持多语言网站吗？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们支持多语言网站创建。你可以使用中文、英文或其他语言编写Markdown笔记，我们的主题都支持国际化和多语言显示，让你能够轻松创建面向全球受众的内容。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区域 -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>准备试用Friday插件了吗？</h2>
+                    <p>加入来自1000+领先公司的专业人士</p>
+                    <div class="cta-buttons">
+                        <a href="https://obsidian.md/plugins?search=friday#" class="btn btn-primary btn-large">
+                            <i class="fas fa-globe"></i>
+                            安装Friday插件
+                        </a>
+                        <button class="btn btn-secondary btn-large">
+                            <i class="fas fa-calendar"></i>
+                            预约演示
+                        </button>
+                    </div>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>企业级安全</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-users"></i>
+                            <span>1000+用户信赖</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5 用户评分</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="mdfriday.svg" alt="MDFriday" class="footer-logo-img">
+                        <span>MDFriday</span>
+                    </div>
+                    <p class="footer-description">
+                        MDFriday是#1 Obsidian笔记发布插件。让每个人都能在Obsidian中一键发布精美网站，数据安全，尊重每位创作者。
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="install.html">安装指南</a></li>
+                        <li><a href="https://obsidian.md/plugins?search=friday#">下载插件</a></li>
+                        <li><a href="coming-soon.html">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 MDFriday. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站主题 - MDFriday | 精美主题让你的笔记闪闪发光</title>
+    <meta name="description" content="探索MDFriday的丰富主题库：Hugo风格主题和Obsidian优化主题，支持原生插件，让你的笔记网站呈现专业效果。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="mdfriday.svg" alt="MDFriday" class="logo-img">
+                    <span>MDFriday</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="features.html" class="nav-link">核心功能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="install.html" class="nav-link">安装指南</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://obsidian.md/plugins?search=friday#" class="nav-btn nav-btn-primary">免费试用</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- Hero区域 -->
+        <section class="themes-hero">
+            <div class="container">
+                <div class="themes-hero-content">
+                    <div class="themes-hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-palette"></i>
+                            <span>50+ 精美主题</span>
+                        </div>
+                        <h1 class="themes-hero-title">
+                            让你的笔记
+                            <span class="gradient-text">闪闪发光</span>
+                        </h1>
+                        <p class="themes-hero-description">
+                            从经典Hugo主题到Obsidian优化主题，每一个都经过精心设计，让你的知识以最美的方式呈现给世界。
+                        </p>
+                        <div class="themes-hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">精美主题</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">响应式设计</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">主题类型</span>
+                            </div>
+                        </div>
+                        <div class="themes-hero-actions">
+                            <a href="#themes-showcase" class="btn btn-primary btn-large">
+                                <i class="fas fa-eye"></i>
+                                浏览主题
+                            </a>
+                            <a href="#theme-comparison" class="btn btn-secondary btn-large">
+                                <i class="fas fa-balance-scale"></i>
+                                主题对比
+                            </a>
+                        </div>
+                    </div>
+                    <div class="themes-hero-visual">
+                        <div class="theme-preview-showcase">
+                            <div class="preview-card active" data-theme="academic">
+                                <div class="preview-header">
+                                    <div class="preview-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="preview-title">Academic 主题</span>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="academic-preview">
+                                        <h3>研究论文标题</h3>
+                                        <div class="author-info">作者姓名 · 发表日期 · 期刊名称</div>
+                                        <p class="abstract">这是论文摘要的内容，展示了学术主题的专业排版效果...</p>
+                                        <div class="paper-tags">
+                                            <span class="tag">机器学习</span>
+                                            <span class="tag">深度学习</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-card" data-theme="blog">
+                                <div class="preview-header">
+                                    <div class="preview-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="preview-title">PaperMod 主题</span>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="blog-preview">
+                                        <h3>技术博客文章</h3>
+                                        <div class="blog-meta">2024年1月15日 · 阅读时间5分钟</div>
+                                        <p>这是博客文章的开始段落，展示了现代博客主题的清爽风格...</p>
+                                        <div class="read-more">继续阅读 →</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-card" data-theme="obsidian">
+                                <div class="preview-header">
+                                    <div class="preview-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="preview-title">Obsidian 主题</span>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="obsidian-preview">
+                                        <h3>我的知识笔记</h3>
+                                        <div class="dataview-demo">
+                                            <div class="table-title">最近更新</div>
+                                            <div class="table-row">📝 JavaScript基础.md</div>
+                                            <div class="table-row">🎨 设计思考.md</div>
+                                        </div>
+                                        <div class="backlinks">[[相关笔记]] · [[知识图谱]]</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-dots">
+                                <span class="dot active" data-theme="academic"></span>
+                                <span class="dot" data-theme="blog"></span>
+                                <span class="dot" data-theme="obsidian"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主题分类导航 -->
+        <section class="theme-categories-nav">
+            <div class="container">
+                <div class="categories-tabs">
+                    <button class="category-tab active" data-category="all">
+                        <i class="fas fa-th-large"></i>
+                        <span>全部主题</span>
+                        <div class="tab-count">12</div>
+                    </button>
+                    <button class="category-tab" data-category="hugo">
+                        <i class="fas fa-code"></i>
+                        <span>Hugo 主题</span>
+                        <div class="tab-count">6</div>
+                    </button>
+                    <button class="category-tab" data-category="obsidian">
+                        <i class="fas fa-cube"></i>
+                        <span>Obsidian 主题</span>
+                        <div class="tab-count">6</div>
+                    </button>
+                    <button class="category-tab" data-category="popular">
+                        <i class="fas fa-fire"></i>
+                        <span>热门主题</span>
+                        <div class="tab-count">8</div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主题展示区域 -->
+        <section class="themes-showcase" id="themes-showcase">
+            <div class="container">
+                <!-- 特色主题 -->
+                <div class="featured-themes">
+                    <div class="section-header">
+                        <h2>精选主题</h2>
+                        <p>最受用户喜爱的主题选择</p>
+                    </div>
+                    <div class="featured-grid">
+                        <div class="featured-theme-card" data-category="hugo popular">
+                            <div class="featured-badge">
+                                <i class="fas fa-crown"></i>
+                                <span>编辑推荐</span>
+                            </div>
+                            <div class="theme-preview-large">
+                                <div class="preview-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-controls">
+                                            <span class="control red"></span>
+                                            <span class="control yellow"></span>
+                                            <span class="control green"></span>
+                                        </div>
+                                        <div class="browser-url">mysite.netlify.app</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="academic-site">
+                                            <div class="site-header">
+                                                <h1>Dr. 张明的学术主页</h1>
+                                                <p>人工智能 · 机器学习 · 深度学习</p>
+                                            </div>
+                                            <div class="site-nav">研究 | 论文 | 项目 | 关于</div>
+                                            <div class="recent-papers">
+                                                <h3>最新论文</h3>
+                                                <div class="paper-item">
+                                                    <div class="paper-title">深度学习在自然语言处理中的应用</div>
+                                                    <div class="paper-venue">AAAI 2024</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-theme-info">
+                                <div class="theme-header">
+                                    <h3>Academic Pro</h3>
+                                    <div class="theme-tags">
+                                        <span class="tag hugo">Hugo</span>
+                                        <span class="tag premium">Premium</span>
+                                    </div>
+                                </div>
+                                <p class="theme-description">专为学者和研究人员设计的专业主题，支持论文发布、引用管理、数学公式渲染等学术功能。</p>
+                                <div class="theme-features-list">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>LaTeX 数学公式支持</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>BibTeX 引用管理</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>论文列表和分类</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>学术简历模板</span>
+                                    </div>
+                                </div>
+                                <div class="theme-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-download"></i>
+                                        <span>2.3k 下载</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9 评分</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>89% 喜爱</span>
+                                    </div>
+                                </div>
+                                <div class="theme-actions">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-eye"></i>
+                                        实时预览
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="fas fa-info-circle"></i>
+                                        详细信息
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-theme-card" data-category="obsidian popular">
+                            <div class="featured-badge new">
+                                <i class="fas fa-sparkles"></i>
+                                <span>新发布</span>
+                            </div>
+                            <div class="theme-preview-large">
+                                <div class="preview-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-controls">
+                                            <span class="control red"></span>
+                                            <span class="control yellow"></span>
+                                            <span class="control green"></span>
+                                        </div>
+                                        <div class="browser-url">knowledge.github.io</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="obsidian-site">
+                                            <div class="site-sidebar">
+                                                <div class="sidebar-item">📚 学习笔记</div>
+                                                <div class="sidebar-item">🎯 项目管理</div>
+                                                <div class="sidebar-item active">💡 想法收集</div>
+                                            </div>
+                                            <div class="site-main">
+                                                <h2>JavaScript 学习笔记</h2>
+                                                <div class="dataview-table">
+                                                    <div class="table-header">最近更新的笔记</div>
+                                                    <div class="table-content">
+                                                        <div class="table-row">ES6 新特性.md</div>
+                                                        <div class="table-row">异步编程.md</div>
+                                                    </div>
+                                                </div>
+                                                <div class="backlinks">
+                                                    <span class="link">[[前端开发]]</span>
+                                                    <span class="link">[[编程语言]]</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-theme-info">
+                                <div class="theme-header">
+                                    <h3>Obsidian Garden</h3>
+                                    <div class="theme-tags">
+                                        <span class="tag obsidian">Obsidian</span>
+                                        <span class="tag new">New</span>
+                                    </div>
+                                </div>
+                                <p class="theme-description">完美还原Obsidian体验的数字花园主题，支持双链、标签、图谱等所有核心功能，让你的知识网络在线上绽放。</p>
+                                <div class="theme-features-list">
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Dataview 插件支持</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Mermaid 图表渲染</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>双链和反向链接</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>标签云和图谱</span>
+                                    </div>
+                                </div>
+                                <div class="theme-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-download"></i>
+                                        <span>1.8k 下载</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8 评分</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>92% 喜爱</span>
+                                    </div>
+                                </div>
+                                <div class="theme-actions">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-eye"></i>
+                                        实时预览
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="fas fa-info-circle"></i>
+                                        详细信息
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主题网格 -->
+                <div class="themes-grid-section">
+                    <div class="section-header">
+                        <h2>所有主题</h2>
+                        <div class="grid-controls">
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid">
+                                    <i class="fas fa-th-large"></i>
+                                </button>
+                                <button class="view-btn" data-view="list">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            <div class="sort-dropdown">
+                                <select class="sort-select">
+                                    <option value="popular">最受欢迎</option>
+                                    <option value="newest">最新发布</option>
+                                    <option value="downloads">下载量</option>
+                                    <option value="rating">评分</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="themes-grid" id="themes-grid">
+                        <!-- Hugo 主题 -->
+                        <div class="theme-card" data-category="hugo popular">
+                            <div class="theme-preview-card">
+                                <div class="preview-image">
+                                    <div class="blog-mockup">
+                                        <div class="mockup-header">
+                                            <div class="site-title">我的技术博客</div>
+                                            <div class="site-nav">首页 文章 关于</div>
+                                        </div>
+                                        <div class="mockup-content">
+                                            <div class="post-item">
+                                                <h4>React Hooks 深度解析</h4>
+                                                <p>探索现代React开发...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="preview-overlay">
+                                    <button class="preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                        预览主题
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="theme-info">
+                                <div class="theme-header">
+                                    <h3>PaperMod</h3>
+                                    <div class="theme-meta">
+                                        <span class="theme-tag hugo">Hugo</span>
+                                        <div class="theme-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="theme-description">简洁现代的博客主题，完美适配个人博客和技术文章分享</p>
+                                <div class="theme-features">
+                                    <span class="feature-tag">响应式</span>
+                                    <span class="feature-tag">暗黑模式</span>
+                                    <span class="feature-tag">快速加载</span>
+                                </div>
+                                <div class="theme-footer">
+                                    <div class="download-count">
+                                        <i class="fas fa-download"></i>
+                                        <span>5.7k</span>
+                                    </div>
+                                    <button class="use-theme-btn">使用主题</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-card" data-category="obsidian popular">
+                            <div class="theme-preview-card">
+                                <div class="preview-image">
+                                    <div class="obsidian-mockup">
+                                        <div class="mockup-sidebar">
+                                            <div class="folder">📁 项目笔记</div>
+                                            <div class="file active">📄 学习计划.md</div>
+                                        </div>
+                                        <div class="mockup-content">
+                                            <h4>学习计划</h4>
+                                            <div class="dataview-mini">
+                                                <div class="dv-row">JavaScript ✅</div>
+                                                <div class="dv-row">React 🔄</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="preview-overlay">
+                                    <button class="preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                        预览主题
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="theme-info">
+                                <div class="theme-header">
+                                    <h3>Obsidian Purple</h3>
+                                    <div class="theme-meta">
+                                        <span class="theme-tag obsidian">Obsidian</span>
+                                        <div class="theme-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>4.7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="theme-description">保持Obsidian视觉风格，完美支持Dataview、Mermaid等插件</p>
+                                <div class="theme-features">
+                                    <span class="feature-tag">Dataview</span>
+                                    <span class="feature-tag">Mermaid</span>
+                                    <span class="feature-tag">原生风格</span>
+                                </div>
+                                <div class="theme-footer">
+                                    <div class="download-count">
+                                        <i class="fas fa-download"></i>
+                                        <span>3.2k</span>
+                                    </div>
+                                    <button class="use-theme-btn">使用主题</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-card" data-category="hugo">
+                            <div class="theme-preview-card">
+                                <div class="preview-image">
+                                    <div class="docs-mockup">
+                                        <div class="docs-sidebar">
+                                            <div class="nav-item">快速开始</div>
+                                            <div class="nav-item active">API 参考</div>
+                                            <div class="nav-item">示例代码</div>
+                                        </div>
+                                        <div class="docs-content">
+                                            <h4>API 参考文档</h4>
+                                            <div class="code-block">
+                                                <div class="code-line">function getData() {</div>
+                                                <div class="code-line">  return fetch('/api');</div>
+                                                <div class="code-line">}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="preview-overlay">
+                                    <button class="preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                        预览主题
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="theme-info">
+                                <div class="theme-header">
+                                    <h3>Docsy</h3>
+                                    <div class="theme-meta">
+                                        <span class="theme-tag hugo">Hugo</span>
+                                        <div class="theme-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="theme-description">专业的文档主题，适合技术文档、API文档和产品手册</p>
+                                <div class="theme-features">
+                                    <span class="feature-tag">文档结构</span>
+                                    <span class="feature-tag">搜索功能</span>
+                                    <span class="feature-tag">多语言</span>
+                                </div>
+                                <div class="theme-footer">
+                                    <div class="download-count">
+                                        <i class="fas fa-download"></i>
+                                        <span>4.1k</span>
+                                    </div>
+                                    <button class="use-theme-btn">使用主题</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-card" data-category="obsidian">
+                            <div class="theme-preview-card">
+                                <div class="preview-image">
+                                    <div class="minimal-mockup">
+                                        <div class="minimal-header">
+                                            <div class="page-title">极简笔记</div>
+                                        </div>
+                                        <div class="minimal-content">
+                                            <div class="note-block">
+                                                <div class="note-title">今日思考</div>
+                                                <div class="note-text">简单就是美...</div>
+                                            </div>
+                                            <div class="tag-list">
+                                                <span class="tag-item">#思考</span>
+                                                <span class="tag-item">#设计</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="preview-overlay">
+                                    <button class="preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                        预览主题
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="theme-info">
+                                <div class="theme-header">
+                                    <h3>Obsidian Minimal</h3>
+                                    <div class="theme-meta">
+                                        <span class="theme-tag obsidian">Obsidian</span>
+                                        <div class="theme-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="theme-description">极简设计风格，支持Kanban看板和Timeline时间线插件</p>
+                                <div class="theme-features">
+                                    <span class="feature-tag">Kanban</span>
+                                    <span class="feature-tag">Timeline</span>
+                                    <span class="feature-tag">极简风格</span>
+                                </div>
+                                <div class="theme-footer">
+                                    <div class="download-count">
+                                        <i class="fas fa-download"></i>
+                                        <span>2.9k</span>
+                                    </div>
+                                    <button class="use-theme-btn">使用主题</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主题对比 -->
+        <section class="theme-comparison" id="theme-comparison">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hugo vs Obsidian 主题</h2>
+                    <p>选择最适合你需求的主题类型</p>
+                </div>
+                <div class="comparison-cards">
+                    <div class="comparison-card hugo-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Hugo 主题</h3>
+                            <p class="card-subtitle">经典网站风格</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>专业网站设计</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>SEO 优化</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>高度可定制</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>快速加载</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>多种布局</span>
+                                </div>
+                            </div>
+                            <div class="best-for">
+                                <h4>最适合：</h4>
+                                <div class="use-cases">
+                                    <span class="use-case">个人博客</span>
+                                    <span class="use-case">技术文档</span>
+                                    <span class="use-case">学术网站</span>
+                                    <span class="use-case">公司官网</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card obsidian-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>Obsidian 主题</h3>
+                            <p class="card-subtitle">原生笔记风格</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>原生插件支持</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>双链和反链</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Dataview 表格</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Mermaid 图表</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>标签和图谱</span>
+                                </div>
+                            </div>
+                            <div class="best-for">
+                                <h4>最适合：</h4>
+                                <div class="use-cases">
+                                    <span class="use-case">知识库</span>
+                                    <span class="use-case">笔记分享</span>
+                                    <span class="use-case">数字花园</span>
+                                    <span class="use-case">研究笔记</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区域 -->
+        <section class="themes-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>准备让你的笔记闪闪发光了吗？</h2>
+                    <p>安装MDFriday插件，立即体验50+精美主题</p>
+                    <div class="cta-buttons">
+                        <a href="https://obsidian.md/plugins?search=friday#" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            安装Friday插件
+                        </a>
+                        <a href="features.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-info-circle"></i>
+                            了解更多功能
+                        </a>
+                    </div>
+                    <div class="cta-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>在Obsidian社区插件中搜索"Friday"即可安装</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="mdfriday.svg" alt="MDFriday" class="footer-logo-img">
+                        <span>MDFriday</span>
+                    </div>
+                    <p class="footer-description">
+                        MDFriday是#1 Obsidian笔记发布插件。我们让每个人都能在Obsidian中一键发布精美网站，数据安全，尊重每位创作者。
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>产品功能</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">核心功能</a></li>
+                        <li><a href="themes.html">网站主题</a></li>
+                        <li><a href="install.html">安装指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>解决方案</h4>
+                    <ul class="footer-links">
+                        <li><a href="personal-blog.html">个人博客</a></li>
+                        <li><a href="documentation.html">技术文档</a></li>
+                        <li><a href="knowledge-base.html">知识库</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 MDFriday. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

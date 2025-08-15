@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安装指南 - MDFriday | 3分钟完成安装，立即开始发布</title>
+    <meta name="description" content="MDFriday插件安装指南，从下载安装到发布第一个网站的完整教程。简单3步，立即开始。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="mdfriday.svg" alt="MDFriday" class="logo-img">
+                    <span>MDFriday</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="features.html" class="nav-link">核心功能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="install.html" class="nav-link active">安装指南</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://obsidian.md/plugins?search=friday#" class="nav-btn nav-btn-primary">免费试用</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>安装指南</span>
+                </div>
+                <div class="page-header-content">
+                    <h1 class="page-title">3分钟完成安装</h1>
+                    <p class="page-subtitle">
+                        简单几步，立即开始将你的Obsidian笔记发布为精美网站
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快速开始 -->
+        <section class="quick-start">
+            <div class="container">
+                <div class="quick-start-content">
+                    <div class="quick-start-text">
+                        <div class="quick-start-badge">
+                            <i class="fas fa-zap"></i>
+                            <span>快速开始</span>
+                        </div>
+                        <h2>只需3步，立即开始</h2>
+                        <p>
+                            MDFriday插件安装简单快捷，无需复杂配置。按照我们的指南，3分钟内就能发布你的第一个网站。
+                        </p>
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">分钟安装</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">复杂配置</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">成功率</span>
+                            </div>
+                        </div>
+                        <div class="quick-actions">
+                            <a href="#install-steps" class="btn btn-primary btn-large">
+                                <i class="fas fa-play"></i>
+                                开始安装
+                            </a>
+                            <a href="#system-requirements" class="btn btn-secondary btn-large">
+                                <i class="fas fa-info-circle"></i>
+                                系统要求
+                            </a>
+                        </div>
+                    </div>
+                    <div class="quick-start-visual">
+                        <div class="install-preview">
+                            <div class="preview-steps">
+                                <div class="preview-step active">
+                                    <div class="step-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <span>搜索插件</span>
+                                </div>
+                                <div class="step-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="preview-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-download"></i>
+                                    </div>
+                                    <span>一键安装</span>
+                                </div>
+                                <div class="step-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="preview-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <span>立即发布</span>
+                                </div>
+                            </div>
+                            <div class="timer-display">
+                                <div class="timer-circle">
+                                    <span class="timer-text">3:00</span>
+                                </div>
+                                <p>平均安装时间</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 详细安装步骤 -->
+        <section class="install-steps-detailed" id="install-steps">
+            <div class="container">
+                <div class="section-header">
+                    <h2>详细安装步骤</h2>
+                    <p>跟随我们的图文指南，轻松完成安装</p>
+                </div>
+
+                <!-- 步骤1：搜索插件 -->
+                <div class="install-step">
+                    <div class="step-content">
+                        <div class="step-text">
+                            <div class="step-number">1</div>
+                            <h3>搜索Friday插件</h3>
+                            <p>
+                                在Obsidian中打开设置 → 社区插件 → 浏览，然后搜索"Friday"。我们的插件会出现在搜索结果的第一位。
+                            </p>
+                            <div class="step-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>确保已启用社区插件</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>使用英文"Friday"搜索</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>查找sunwei作者</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="obsidian-window">
+                                <div class="window-header">
+                                    <div class="window-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="window-title">Obsidian - 社区插件</span>
+                                </div>
+                                <div class="window-content">
+                                    <div class="plugin-search-demo">
+                                        <div class="search-input">
+                                            <i class="fas fa-search"></i>
+                                            <input type="text" value="Friday" readonly>
+                                        </div>
+                                        <div class="search-results">
+                                            <div class="plugin-item featured">
+                                                <div class="plugin-icon">
+                                                    <i class="fab fa-markdown"></i>
+                                                </div>
+                                                <div class="plugin-details">
+                                                    <h4>Friday</h4>
+                                                    <p>将Obsidian笔记发布为精美网站</p>
+                                                    <span class="plugin-author">by sunwei</span>
+                                                </div>
+                                                <button class="install-button">安装</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤2：安装插件 -->
+                <div class="install-step reverse">
+                    <div class="step-content">
+                        <div class="step-text">
+                            <div class="step-number">2</div>
+                            <h3>安装并启用插件</h3>
+                            <p>
+                                点击"安装"按钮，等待下载完成后点击"启用"。整个过程大约需要30秒，无需任何额外配置。
+                            </p>
+                            <div class="step-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>自动下载最新版本</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>无需手动配置</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>即时生效，立即可用</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="obsidian-window">
+                                <div class="window-header">
+                                    <div class="window-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="window-title">Friday - 插件详情</span>
+                                </div>
+                                <div class="window-content">
+                                    <div class="plugin-detail-demo">
+                                        <div class="plugin-header">
+                                            <div class="plugin-icon large">
+                                                <i class="fab fa-markdown"></i>
+                                            </div>
+                                            <div class="plugin-info">
+                                                <h3>Friday</h3>
+                                                <p>版本 v0.9.0 · sunwei</p>
+                                                <div class="plugin-status">
+                                                    <span class="status-badge installed">✓ 已安装</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plugin-actions">
+                                            <button class="btn-primary">启用插件</button>
+                                            <button class="btn-secondary">查看设置</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤3：开始发布 -->
+                <div class="install-step">
+                    <div class="step-content">
+                        <div class="step-text">
+                            <div class="step-number">3</div>
+                            <h3>开始发布网站</h3>
+                            <p>
+                                右键点击任意文件夹或笔记，选择"Publish to Web"开始发布流程。插件会自动打开发布面板，引导你完成网站发布。
+                            </p>
+                            <div class="step-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>支持文件夹和单个文件</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>智能识别笔记结构</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>一键预览和发布</span>
+                                </div>
+                            </div>
+                            <div class="step-cta">
+                                <a href="features.html" class="feature-link">
+                                    了解发布功能 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="step-demo">
+                            <div class="obsidian-window">
+                                <div class="window-header">
+                                    <div class="window-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <span class="window-title">Obsidian - 我的知识库</span>
+                                </div>
+                                <div class="window-content">
+                                    <div class="publish-demo">
+                                        <div class="file-tree-demo">
+                                            <div class="folder-item active">
+                                                <i class="fas fa-folder-open"></i>
+                                                <span>技术笔记</span>
+                                                <div class="context-menu visible">
+                                                    <div class="menu-item">
+                                                        <i class="fas fa-edit"></i>
+                                                        <span>重命名</span>
+                                                    </div>
+                                                    <div class="menu-item highlight">
+                                                        <i class="fas fa-globe"></i>
+                                                        <span>Publish to Web</span>
+                                                    </div>
+                                                    <div class="menu-item">
+                                                        <i class="fas fa-copy"></i>
+                                                        <span>复制</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>JavaScript基础.md</span>
+                                            </div>
+                                            <div class="file-item">
+                                                <i class="fas fa-file-alt"></i>
+                                                <span>React进阶.md</span>
+                                            </div>
+                                        </div>
+                                        <div class="publish-panel">
+                                            <h4>发布设置</h4>
+                                            <div class="setting-item">
+                                                <label>网站标题</label>
+                                                <input type="text" value="我的技术博客">
+                                            </div>
+                                            <div class="setting-item">
+                                                <label>选择主题</label>
+                                                <select>
+                                                    <option>PaperMod (推荐)</option>
+                                                    <option>Academic</option>
+                                                    <option>Obsidian Purple</option>
+                                                </select>
+                                            </div>
+                                            <button class="publish-button">
+                                                <i class="fas fa-rocket"></i>
+                                                开始发布
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 系统要求 -->
+        <section class="system-requirements" id="system-requirements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>系统要求</h2>
+                    <p>确保你的环境满足以下最低要求</p>
+                </div>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h3>Windows</h3>
+                        <div class="requirement-list">
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Windows 10 (版本 1903+)</span>
+                            </div>
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Windows 11 (所有版本)</span>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>4GB RAM 推荐</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h3>macOS</h3>
+                        <div class="requirement-list">
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>macOS 10.15 Catalina+</span>
+                            </div>
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Apple Silicon 原生支持</span>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Intel & M1/M2 芯片</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3>Linux</h3>
+                        <div class="requirement-list">
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Ubuntu 18.04+</span>
+                            </div>
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Fedora 32+</span>
+                            </div>
+                            <div class="req-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>其他发行版</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirement-card">
+                        <div class="requirement-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Obsidian</h3>
+                        <div class="requirement-list">
+                            <div class="req-item supported">
+                                <i class="fas fa-check"></i>
+                                <span>Obsidian 1.0.0+</span>
+                            </div>
+                            <div class="req-item required">
+                                <i class="fas fa-exclamation"></i>
+                                <span>启用社区插件</span>
+                            </div>
+                            <div class="req-item required">
+                                <i class="fas fa-exclamation"></i>
+                                <span>关闭安全模式</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 故障排除 -->
+        <section class="troubleshooting">
+            <div class="container">
+                <div class="section-header">
+                    <h2>故障排除</h2>
+                    <p>遇到问题？这里有最常见问题的解决方案</p>
+                </div>
+                <div class="troubleshooting-grid">
+                    <div class="trouble-card">
+                        <div class="trouble-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>找不到Friday插件</h3>
+                        <div class="trouble-solution">
+                            <div class="solution-step">
+                                <span class="step-num">1</span>
+                                <p>确保Obsidian版本为1.0.0或更高</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">2</span>
+                                <p>检查是否已启用社区插件功能</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">3</span>
+                                <p>使用英文"Friday"进行搜索</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-card">
+                        <div class="trouble-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>安装失败</h3>
+                        <div class="trouble-solution">
+                            <div class="solution-step">
+                                <span class="step-num">1</span>
+                                <p>检查网络连接是否稳定</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">2</span>
+                                <p>重启Obsidian后重新尝试</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">3</span>
+                                <p>清除插件缓存后重新安装</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-card">
+                        <div class="trouble-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h3>右键菜单无选项</h3>
+                        <div class="trouble-solution">
+                            <div class="solution-step">
+                                <span class="step-num">1</span>
+                                <p>确认插件已正确启用</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">2</span>
+                                <p>重启Obsidian让插件生效</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">3</span>
+                                <p>右键点击文件夹或.md文件</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trouble-card">
+                        <div class="trouble-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>构建失败</h3>
+                        <div class="trouble-solution">
+                            <div class="solution-step">
+                                <span class="step-num">1</span>
+                                <p>检查笔记中的特殊字符</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">2</span>
+                                <p>确保链接的文件都存在</p>
+                            </div>
+                            <div class="solution-step">
+                                <span class="step-num">3</span>
+                                <p>查看错误日志获取详情</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下一步 -->
+        <section class="next-steps">
+            <div class="container">
+                <div class="section-header">
+                    <h2>安装完成！接下来做什么？</h2>
+                    <p>探索MDFriday的强大功能，发布你的第一个网站</p>
+                </div>
+                <div class="next-steps-showcase">
+                    <div class="main-next-step">
+                        <div class="next-step-content">
+                            <div class="next-step-badge">
+                                <i class="fas fa-rocket"></i>
+                                <span>立即开始</span>
+                            </div>
+                            <h3>发布你的第一个网站</h3>
+                            <p>
+                                选择一个包含笔记的文件夹，右键选择"Publish to Web"，跟随向导完成你的第一次发布。整个过程只需要几分钟！
+                            </p>
+                            <div class="next-step-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>选择文件夹或单个笔记</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>配置网站标题和主题</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>本地预览后一键发布</span>
+                                </div>
+                            </div>
+                            <div class="next-step-actions">
+                                <a href="features.html" class="btn btn-primary">
+                                    <i class="fas fa-play"></i>
+                                    查看发布教程
+                                </a>
+                            </div>
+                        </div>
+                        <div class="next-step-visual">
+                            <div class="publish-flow-demo">
+                                <div class="flow-step active">
+                                    <div class="flow-icon">
+                                        <i class="fas fa-folder"></i>
+                                    </div>
+                                    <span>选择内容</span>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-step">
+                                    <div class="flow-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <span>配置设置</span>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-step">
+                                    <div class="flow-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <span>预览效果</span>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-step">
+                                    <div class="flow-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <span>发布上线</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="secondary-next-steps">
+                        <div class="secondary-step-card">
+                            <div class="secondary-step-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="secondary-step-content">
+                                <h4>浏览主题库</h4>
+                                <p>从50+精美主题中选择最适合你内容风格的设计</p>
+                                <a href="themes.html" class="secondary-step-link">
+                                    浏览主题 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="secondary-step-card">
+                            <div class="secondary-step-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="secondary-step-content">
+                                <h4>配置部署</h4>
+                                <p>设置Netlify、GitHub Pages等部署平台，让网站上线</p>
+                                <a href="features.html" class="secondary-step-link">
+                                    部署指南 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="secondary-step-card">
+                            <div class="secondary-step-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="secondary-step-content">
+                                <h4>获取帮助</h4>
+                                <p>查看详细文档，加入社区，获得专业技术支持</p>
+                                <a href="#" class="secondary-step-link">
+                                    帮助中心 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区域 -->
+        <section class="install-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>准备开始你的发布之旅了吗？</h2>
+                    <p>加入1000+用户，让你的知识闪闪发光</p>
+                    <div class="cta-buttons">
+                        <a href="https://obsidian.md/plugins?search=friday#" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            立即安装Friday
+                        </a>
+                        <a href="features.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-info-circle"></i>
+                            了解更多功能
+                        </a>
+                    </div>
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <i class="fas fa-users"></i>
+                            <span>1000+ 活跃用户</span>
+                        </div>
+                        <div class="cta-stat">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5 用户评分</span>
+                        </div>
+                        <div class="cta-stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% 数据安全</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="mdfriday.svg" alt="MDFriday" class="footer-logo-img">
+                        <span>MDFriday</span>
+                    </div>
+                    <p class="footer-description">
+                        MDFriday是#1 Obsidian笔记发布插件。我们让每个人都能在Obsidian中一键发布精美网站，数据安全，尊重每位创作者。
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>产品功能</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">核心功能</a></li>
+                        <li><a href="themes.html">网站主题</a></li>
+                        <li><a href="install.html">安装指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>解决方案</h4>
+                    <ul class="footer-links">
+                        <li><a href="personal-blog.html">个人博客</a></li>
+                        <li><a href="documentation.html">技术文档</a></li>
+                        <li><a href="knowledge-base.html">知识库</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 MDFriday. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
