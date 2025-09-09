@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小朋友打字练习 - 键盘大师</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 键盘大师 - 小朋友打字练习</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">等级</span>
+                    <span class="stat-value" id="level">1</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">分数</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">准确率</span>
+                    <span class="stat-value" id="accuracy">100%</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="game-modes">
+            <button class="mode-btn active" data-mode="finger-guide">指法教学</button>
+            <button class="mode-btn" data-mode="letter-practice">字母练习</button>
+            <button class="mode-btn" data-mode="word-practice">单词练习</button>
+            <button class="mode-btn" data-mode="sentence-practice">句子练习</button>
+        </nav>
+
+        <!-- 指法教学模式 -->
+        <div class="game-section active" id="finger-guide">
+            <h2>🖐️ 指法教学</h2>
+            <p class="instruction">学习正确的手指位置，每个手指负责特定的按键</p>
+            
+            <div class="keyboard-container">
+                <div class="keyboard">
+                    <!-- 数字行 -->
+                    <div class="key-row">
+                        <div class="key" data-key="`" data-finger="left-pinky">~<br>`</div>
+                        <div class="key" data-key="1" data-finger="left-pinky">!<br>1</div>
+                        <div class="key" data-key="2" data-finger="left-ring">@<br>2</div>
+                        <div class="key" data-key="3" data-finger="left-middle">#<br>3</div>
+                        <div class="key" data-key="4" data-finger="left-index">$<br>4</div>
+                        <div class="key" data-key="5" data-finger="left-index">%<br>5</div>
+                        <div class="key" data-key="6" data-finger="right-index">^<br>6</div>
+                        <div class="key" data-key="7" data-finger="right-index">&<br>7</div>
+                        <div class="key" data-key="8" data-finger="right-middle">*<br>8</div>
+                        <div class="key" data-key="9" data-finger="right-ring">(<br>9</div>
+                        <div class="key" data-key="0" data-finger="right-pinky">)<br>0</div>
+                        <div class="key" data-key="-" data-finger="right-pinky">_<br>-</div>
+                        <div class="key" data-key="=" data-finger="right-pinky">+<br>=</div>
+                        <div class="key wide" data-key="Backspace">Backspace</div>
+                    </div>
+                    
+                    <!-- QWERTY行 -->
+                    <div class="key-row">
+                        <div class="key wide">Tab</div>
+                        <div class="key" data-key="q" data-finger="left-pinky">Q</div>
+                        <div class="key" data-key="w" data-finger="left-ring">W</div>
+                        <div class="key" data-key="e" data-finger="left-middle">E</div>
+                        <div class="key" data-key="r" data-finger="left-index">R</div>
+                        <div class="key" data-key="t" data-finger="left-index">T</div>
+                        <div class="key" data-key="y" data-finger="right-index">Y</div>
+                        <div class="key" data-key="u" data-finger="right-index">U</div>
+                        <div class="key" data-key="i" data-finger="right-middle">I</div>
+                        <div class="key" data-key="o" data-finger="right-ring">O</div>
+                        <div class="key" data-key="p" data-finger="right-pinky">P</div>
+                        <div class="key" data-key="[" data-finger="right-pinky">{<br>[</div>
+                        <div class="key" data-key="]" data-finger="right-pinky">}<br>]</div>
+                        <div class="key" data-key="\\" data-finger="right-pinky">|<br>\\</div>
+                    </div>
+                    
+                    <!-- ASDF行（基准行） -->
+                    <div class="key-row">
+                        <div class="key extra-wide">Caps Lock</div>
+                        <div class="key home-key" data-key="a" data-finger="left-pinky">A</div>
+                        <div class="key home-key" data-key="s" data-finger="left-ring">S</div>
+                        <div class="key home-key" data-key="d" data-finger="left-middle">D</div>
+                        <div class="key home-key" data-key="f" data-finger="left-index">F</div>
+                        <div class="key" data-key="g" data-finger="left-index">G</div>
+                        <div class="key" data-key="h" data-finger="right-index">H</div>
+                        <div class="key home-key" data-key="j" data-finger="right-index">J</div>
+                        <div class="key home-key" data-key="k" data-finger="right-middle">K</div>
+                        <div class="key home-key" data-key="l" data-finger="right-ring">L</div>
+                        <div class="key home-key" data-key=";" data-finger="right-pinky">:<br>;</div>
+                        <div class="key" data-key="'" data-finger="right-pinky">"<br>'</div>
+                        <div class="key extra-wide">Enter</div>
+                    </div>
+                    
+                    <!-- ZXCV行 -->
+                    <div class="key-row">
+                        <div class="key extra-wide">Shift</div>
+                        <div class="key" data-key="z" data-finger="left-pinky">Z</div>
+                        <div class="key" data-key="x" data-finger="left-ring">X</div>
+                        <div class="key" data-key="c" data-finger="left-middle">C</div>
+                        <div class="key" data-key="v" data-finger="left-index">V</div>
+                        <div class="key" data-key="b" data-finger="left-index">B</div>
+                        <div class="key" data-key="n" data-finger="right-index">N</div>
+                        <div class="key" data-key="m" data-finger="right-index">M</div>
+                        <div class="key" data-key="," data-finger="right-middle"><</div>
+                        <div class="key" data-key="." data-finger="right-ring">></div>
+                        <div class="key" data-key="/" data-finger="right-pinky">?<br>/</div>
+                        <div class="key extra-wide">Shift</div>
+                    </div>
+                    
+                    <!-- 空格行 -->
+                    <div class="key-row">
+                        <div class="key">Ctrl</div>
+                        <div class="key">Alt</div>
+                        <div class="key space-bar" data-key=" ">Space</div>
+                        <div class="key">Alt</div>
+                        <div class="key">Ctrl</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hands-guide">
+                <div class="hand left-hand">
+                    <h3>左手 🤚</h3>
+                    <div class="finger-guide">
+                        <div class="finger left-pinky">小指: Q A Z 1 ` Tab Caps Shift</div>
+                        <div class="finger left-ring">无名指: W S X 2</div>
+                        <div class="finger left-middle">中指: E D C 3</div>
+                        <div class="finger left-index">食指: R T F G V B 4 5</div>
+                    </div>
+                </div>
+                <div class="hand right-hand">
+                    <h3>右手 🤚</h3>
+                    <div class="finger-guide">
+                        <div class="finger right-index">食指: Y U H J N M 6 7</div>
+                        <div class="finger right-middle">中指: I K , 8</div>
+                        <div class="finger right-ring">无名指: O L . 9</div>
+                        <div class="finger right-pinky">小指: P ; / 0 - = [ ] \\ ' Enter Shift</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="finger-practice">
+                <h3>指法练习</h3>
+                <p>点击按键查看应该用哪个手指按下</p>
+                <div class="practice-key-display">
+                    <div id="current-key">点击键盘上的任意按键</div>
+                    <div id="finger-instruction">我会告诉你用哪个手指</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 字母练习模式 -->
+        <div class="game-section" id="letter-practice">
+            <h2>🔤 字母练习</h2>
+            <p class="instruction">练习单个字母，掌握基本指法</p>
+            
+            <div class="practice-area">
+                <div class="target-letter">
+                    <span id="target-char">A</span>
+                </div>
+                <div class="input-area">
+                    <input type="text" id="letter-input" maxlength="1" placeholder="按下对应的字母键">
+                </div>
+                <div class="practice-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="letter-progress"></div>
+                    </div>
+                    <span class="progress-text">进度: <span id="letter-count">0</span>/26</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 单词练习模式 -->
+        <div class="game-section" id="word-practice">
+            <h2>📝 单词练习</h2>
+            <p class="instruction">练习常用单词，提高打字速度</p>
+            
+            <div class="practice-area">
+                <div class="target-word">
+                    <span id="target-word">apple</span>
+                </div>
+                <div class="input-area">
+                    <input type="text" id="word-input" placeholder="输入上方显示的单词">
+                </div>
+                <div class="word-stats">
+                    <div class="stat">完成单词: <span id="words-completed">0</span></div>
+                    <div class="stat">速度: <span id="wpm">0</span> WPM</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 句子练习模式 -->
+        <div class="game-section" id="sentence-practice">
+            <h2>📖 句子练习</h2>
+            <p class="instruction">练习完整句子，综合提升打字能力</p>
+            
+            <div class="practice-area">
+                <div class="target-sentence">
+                    <span id="target-sentence">The quick brown fox jumps over the lazy dog.</span>
+                </div>
+                <div class="input-area">
+                    <textarea id="sentence-input" rows="3" placeholder="输入上方显示的句子"></textarea>
+                </div>
+                <div class="sentence-stats">
+                    <div class="stat">完成句子: <span id="sentences-completed">0</span></div>
+                    <div class="stat">平均速度: <span id="avg-wpm">0</span> WPM</div>
+                    <div class="stat">用时: <span id="time-taken">0</span>s</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 成就系统 -->
+        <div class="achievements">
+            <h3>🏆 成就徽章</h3>
+            <div class="achievement-list" id="achievements">
+                <!-- 成就将通过JavaScript动态添加 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
