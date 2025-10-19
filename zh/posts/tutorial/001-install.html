@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- Site Title, Description, Author, and Favicon -->
+<link rel="icon" href="/favicon.svg" >
+<title>
+
+
+  
+
+
+Obsidian Friday 安装指南
+ | MDFriday Journal</title>
+<meta name="description" content="">
+<meta name="author" content="Sun Wei"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "MDFriday Journal",
+    
+    "url": "/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "MDFriday Inc.",
+  "url": "/",
+   "description": "MDFriday 是一个强大的 Markdown 编辑器和笔记应用。",
+   "vision": "专注创作，MDFriday 让你的网站闪闪发光。",
+   "logo": "/images/logo.png",
+   "address": "远程，全球",
+   "email": "team@mdfriday.org",
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "/zh/posts/tutorial/001-install.html",
+          "name": "Obsidian friday 安装指南"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sun Wei"
+  },
+  "headline": "Obsidian Friday 安装指南",
+  "description" : "从社区插件安装
+打开 Obsidian 设置
+前往 社区插件 → 浏览
+搜索 Friday
+点击 安装 然后 启用
+手动安装（适用于网络问题）
+从以下地址下载...",
+  "inLanguage" : "zh",
+  "wordCount": 52,
+  "datePublished" : "Wed Oct 01 2025 00:00:00 GMT+0800 (China Standard Time)",
+  "dateModified" : "Wed Oct 01 2025 00:00:00 GMT+0800 (China Standard Time)",
+  "image" : "/",
+  "keywords" : [ "教程" ],
+  "mainEntityOfPage" : "/zh/posts/tutorial/001-install.html",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Obsidian Friday 安装指南" />
+<meta property="og:description" content="逐步安装 MDFriday 插件">
+<meta property="og:url" content="http://zh/posts/tutorial/001-install.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MDFriday Journal" />
+
+  <meta name="twitter:title" content="Obsidian Friday 安装指南" />
+  <meta name="twitter:description" content="逐步安装 MDFriday 插件">
+  <meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="MDFriday Journal">
+
+  <link rel="stylesheet" href="/css/katex.min.css" />
+  <link rel="stylesheet" href="/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+
+  <link rel="stylesheet" href="/css/highlight.min.css" />
+  <link rel="stylesheet" href="/css/codeblock.css" />
+
+  <link rel="stylesheet" href="/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="/css/photoswipe.default-skin.min.css" /><!--
+If you want to include any custom html just before </head>, put it in /layouts/partials/head_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/head_custom.html doesn't exist.
+-->
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">MDFriday Journal</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+        
+        <li>
+          <a title="首页" href="/zh/">首页</a>
+        </li>
+        
+        
+        
+        <li class="navlinks-container">
+          <a class="navlinks-parent" role="button" tabindex="0">MDFriday</a>
+          <div class="navlinks-children">
+            
+            <a href="/zh/posts/tutorial/001-install.html">下载</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li>
+          <a title="关于" href="/zh/about.html">关于</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="标签" href="/zh/tags">标签</a>
+        </li>
+        
+        
+
+        
+          
+            <li>
+              
+                
+                  <a href="/posts/tutorial/001-install.html">English</a>
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a title="MDFriday Journal" href="/">
+          <img class="avatar-img" src=/logo.png alt="MDFriday Journal" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Search Modal -->
+
+
+    <!--
+Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
+-->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Background of PhotoSwipe.
+     It's a separate element, as animating opacity is faster than rgba(). -->
+<div class="pswp__bg"></div>
+<!-- Slides wrapper with overflow:hidden. -->
+<div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+      PhotoSwipe keeps only 3 of them in DOM to save memory.
+      Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      <!--  Controls are self-explanatory. Order can be changed. -->
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+      <!-- element will get class pswp__preloader--active when preloader is running -->
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1
+      
+         data-img-src-1="/img/hexagon.jpg"
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      
+      <div class="intro-header big-img" style="background-image: url('img/hexagon.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="posts-heading">
+                <h1>Obsidian Friday 安装指南</h1>
+                  
+                    
+                      <h2 class="posts-subheading">逐步安装 MDFriday 插件</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  <i class="fas fa-calendar"></i>&nbsp;发表于  10/1/2025
+  |&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分钟
+  |&nbsp;<i class="fas fa-book"></i>&nbsp;52&nbsp;个字
+
+
+  
+    
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sun Wei
+      
+    
+  
+
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Obsidian Friday 安装指南</h1>
+              
+              
+              
+                
+                  <h2 class="posts-subheading">逐步安装 MDFriday 插件</h2>
+                
+              
+              
+                <span class="post-meta">
+  <i class="fas fa-calendar"></i>&nbsp;发表于  10/1/2025
+  |&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分钟
+  |&nbsp;<i class="fas fa-book"></i>&nbsp;52&nbsp;个字
+
+
+  
+    
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sun Wei
+      
+    
+  
+
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h3 data-heading="从社区插件安装" dir="auto" id="从社区插件安装">从社区插件安装</h3>
+<ol>
+<li dir="auto">打开 <strong>Obsidian 设置</strong></li>
+<li dir="auto">前往 <strong>社区插件 → 浏览</strong></li>
+<li dir="auto">搜索 <strong>Friday</strong></li>
+<li dir="auto">点击 <strong>安装</strong> 然后 <strong>启用</strong></li>
+</ol>
+<hr>
+<h3 data-heading="手动安装（适用于网络问题）" dir="auto" id="手动安装适用于网络问题">手动安装（适用于网络问题）</h3>
+<ol>
+<li dir="auto">从以下地址下载插件压缩包：<br>
+👉 <a data-tooltip-position="top" aria-label="https://sunwei.xyz/releases/0.10.10.zip" rel="noopener nofollow" class="external-link" href="https://sunwei.xyz/releases/0.10.10.zip" target="_blank">https://sunwei.xyz/mdfriday/latest.zip</a></li>
+<li dir="auto">打开 <strong>Obsidian 设置</strong></li>
+<li dir="auto">前往 <strong>社区插件 → 已安装插件</strong></li>
+<li dir="auto">点击右侧的 <strong>文件夹图标</strong> 打开插件目录</li>
+<li dir="auto">将下载的压缩包解压到此目录</li>
+<li dir="auto">将解压的文件夹重命名为 <code>mdfriday</code></li>
+<li dir="auto">返回 Obsidian 并确保插件已 <strong>启用</strong></li>
+</ol>
+<hr>
+<p dir="auto">💡 <strong>提示</strong>：安装后，重新加载插件可以帮助确保插件正确加载。</p>
+
+          
+          
+          <div class="blog-tags">
+              
+              <a href="/zh/tags/教程/index.html">教程</a>
+          </div>
+          
+          
+
+        <hr/>
+        <section id="social-share">
+          <div class="list-inline footer-links">
+            <!-- Social Share Button HTML -->
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      <!-- Twitter -->
+      <li>
+        <a href="//twitter.com/share?url=/zh/posts/tutorial/001-install.html&amp;text=Obsidian Friday 安装指南&amp;via=https://x.com/szm_tech" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      <!-- Facebook -->
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=/zh/posts/tutorial/001-install.html" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      <!-- Reddit -->
+      <li>
+        <a href="//reddit.com/submit?url=/zh/posts/tutorial/001-install.html&amp;title=Obsidian Friday 安装指南" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      <!-- LinkedIn -->
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=/zh/posts/tutorial/001-install.html&amp;title=Obsidian Friday 安装指南" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      <!-- StumbleUpon -->
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=/zh/posts/tutorial/001-install.html&amp;title=Obsidian Friday 安装指南" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      <!-- Pinterest -->
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=/zh/posts/tutorial/001-install.html&amp;description=Obsidian Friday 安装指南" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+          </div>
+        </section>
+
+      </article>
+
+      
+
+ <!-- Comments block -->
+
+    </div>
+  </div>
+</div>
+
+      
+    <div class="page-meta">
+  
+  
+  
+</div>
+
+
+  
+
+<footer>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+            <li>
+              <a href="https://github.com/sunwei" title="github">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://x.com/szm_tech" title="twitter">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.linkedin.com/in/wayde-sun-aab70b23/" title="linkedin">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://sunwei.xyz" title="website">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="mailto:wayde.sun@gmail.com" title="email">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.facebook.com/wayde.sun.3" title="facebook">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.youtube.com/@sunwei-mdfriday" title="youtube">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://discord.gg/t7FHJ6qNzT" title="discord">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+        </ul>
+        <p class="credits copyright text-muted">
+
+          
+            <a href="">Sun Wei</a>
+          &nbsp;&bull;&nbsp;
+          
+
+          &copy;2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="/">MDFriday Journal</a>
+          
+        </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="credits theme-by text-muted">
+          主题 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="/js/katex.min.js"></script>
+<script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="/js/jquery-3.7.0.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
+
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/load-photoswipe.js"></script>
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFZLCQBM2"></script>
+      <script>
+        var doNotTrack = false;
+        if (false) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9MFZLCQBM2');
+        }
+      </script>
+    
+  
+
+
+<!--
+If you want to include any custom html just before </body>, put it in /layouts/partials/footer_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/footer_custom.html doesn't exist.
+-->
+
+
+    
+  </body>
+</html>
+

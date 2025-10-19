@@ -1,573 +1,497 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孙伟 - 全栈开发者 | MDFriday创始人 | sunwei.xyz</title>
-    <meta name="description" content="孙伟 - 热爱开源的全栈开发者，MDFriday创始人。专注于知识管理工具开发，提供全栈开发、技术咨询、MDFriday相关服务等专业服务。">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- 导航栏 -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-user-circle"></i>
-                <span>孙伟</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">首页</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">服务</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">作品</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">关于</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">联系</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/mdfriday" class="nav-link">MDFriday</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- Site Title, Description, Author, and Favicon -->
+<link rel="icon" href="/favicon.svg" >
+<title>
+
+
+  
+
+
+MDFriday Journal
+ | MDFriday Journal</title>
+<meta name="description" content="">
+<meta name="author" content="Sun Wei"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "MDFriday Journal",
+    
+    "url": "/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "MDFriday Inc.",
+  "url": "/",
+   "description": "MDFriday is a powerful Markdown editor and note-taking app.",
+   "vision": "Focus on creating, MDFriday makes your sites shine.",
+   "logo": "/images/logo.png",
+   "address": "Remote, Global",
+   "email": "team@mdfriday.org",
+}
+</script>
+
+<meta property="og:title" content="MDFriday Journal" />
+<meta property="og:description" content="A professional journal by Sun Wei, creator of MDFriday — exploring the intersection of Markdown, creativity, and engineering.">
+<meta property="og:url" content="http://index.html/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MDFriday Journal" />
+
+  <meta name="twitter:title" content="MDFriday Journal" />
+  <meta name="twitter:description" content="A professional journal by Sun Wei, creator of MDFriday — exploring the intersection of Markdown, creativity, and engineering.">
+  <meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="MDFriday Journal">
+
+  <link rel="stylesheet" href="/css/katex.min.css" />
+  <link rel="stylesheet" href="/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+
+  <link rel="stylesheet" href="/css/highlight.min.css" />
+  <link rel="stylesheet" href="/css/codeblock.css" />
+
+  <link rel="stylesheet" href="/css/photoswipe.min.css" />
+  <link rel="stylesheet" href="/css/photoswipe.default-skin.min.css" /><!--
+If you want to include any custom html just before </head>, put it in /layouts/partials/head_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/head_custom.html doesn't exist.
+-->
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">MDFriday Journal</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+        
+        <li>
+          <a title="Home" href="/index.html">Home</a>
+        </li>
+        
+        
+        
+        <li class="navlinks-container">
+          <a class="navlinks-parent" role="button" tabindex="0">MDFriday</a>
+          <div class="navlinks-children">
+            
+            <a href="/posts/tutorial/001-install.html">Download</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li>
+          <a title="About" href="/about.html">About</a>
+        </li>
+        
+        
+        
+        <li>
+          <a title="Tags" href="/tags">Tags</a>
+        </li>
+        
+        
+
+        
+          
+            <li>
+              
+                
+                  <a href="/zh/index.html">中文</a>
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a title="MDFriday Journal" href="/">
+          <img class="avatar-img" src=/logo.png alt="MDFriday Journal" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Search Modal -->
+
+
+    <!--
+Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
+-->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Background of PhotoSwipe.
+     It's a separate element, as animating opacity is faster than rgba(). -->
+<div class="pswp__bg"></div>
+<!-- Slides wrapper with overflow:hidden. -->
+<div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+      PhotoSwipe keeps only 3 of them in DOM to save memory.
+      Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      <!--  Controls are self-explanatory. Order can be changed. -->
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+      <!-- element will get class pswp__preloader--active when preloader is running -->
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
         </div>
-    </nav>
-
-    <!-- 主页面 -->
-    <main>
-        <!-- Hero区域 -->
-        <section id="home" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-greeting">
-                        <span class="greeting-text">你好，我是</span>
-                    </div>
-                    <div class="hero-intro">
-                        <div class="hero-avatar">
-                            <div class="avatar-image">
-                                <img src="me.png" alt="孙伟" class="avatar-photo">
-                            </div>
-                        </div>
-                        <div class="hero-title-section">
-                            <h1 class="hero-title">
-                                <span class="gradient-text">孙伟</span>
-                                <span class="hero-subtitle">MDFriday 创始人 & 专业服务提供商</span>
-                            </h1>
-                        </div>
-                    </div>
-                    <p class="hero-description">
-                        我专注于MDFriday生态的建设与服务，致力于为Obsidian用户提供最专业的笔记发布解决方案。
-                        从插件使用培训到网站部署服务，我提供围绕MDFriday的全方位专业服务。
-                    </p>
-                    <div class="hero-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-edit"></i>
-                            <span>MDFriday专家 • 笔记发布 • 知识分享</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>专业培训 • 定制服务 • 技术支持</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-users"></i>
-                            <span>1000+ 用户信赖</span>
-                        </div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">
-                            <i class="fas fa-eye"></i>
-                            查看作品
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i>
-                            联系我
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="neural-network">
-                        <div class="node" data-delay="0"></div>
-                        <div class="node" data-delay="0.2"></div>
-                        <div class="node" data-delay="0.4"></div>
-                        <div class="node" data-delay="0.6"></div>
-                        <div class="node" data-delay="0.8"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 服务区域 -->
-        <section id="services" class="services">
-            <div class="container">
-                <div class="section-header">
-                    <div class="mdfriday-brand">
-                        <div class="mdfriday-logo">
-                            <img src="mdfriday.svg" alt="MDFriday Logo" class="logo-image">
-                        </div>
-                        <h2 class="section-title">MDFriday 专业服务</h2>
-                    </div>
-                    <p class="section-subtitle">专注于MDFriday生态服务，从插件使用到网站部署，提供完整的笔记发布解决方案</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3 class="service-title">使用培训指导</h3>
-                        <p class="service-description">
-                            提供MDFriday插件使用培训，从基础操作到高级功能，帮助您快速掌握笔记发布的各种技巧和最佳实践。
-                        </p>
-                        <ul class="service-features">
-                            <li>一对一使用指导</li>
-                            <li>团队培训服务</li>
-                            <li>最佳实践分享</li>
-                            <li>问题解答支持</li>
-                        </ul>
-                        <a href="#contact" class="service-link">
-                            <i class="fas fa-arrow-right"></i>
-                            预约培训
-                        </a>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3 class="service-title">定制主题设计</h3>
-                        <p class="service-description">
-                            为您的MDFriday网站设计独特主题，提供个性化定制服务，让您的知识网站拥有专属的视觉风格。
-                        </p>
-                        <ul class="service-features">
-                            <li>个性化主题设计</li>
-                            <li>响应式布局优化</li>
-                            <li>品牌色彩定制</li>
-                            <li>特殊功能集成</li>
-                        </ul>
-                        <a href="#contact" class="service-link">
-                            <i class="fas fa-arrow-right"></i>
-                            定制主题
-                        </a>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3 class="service-title">私有化部署服务</h3>
-                        <p class="service-description">
-                            帮助企业将MDFriday部署到私有服务器，支持团队协作和多站点管理，确保数据安全和访问控制。
-                        </p>
-                        <ul class="service-features">
-                            <li>私有服务器部署</li>
-                            <li>团队权限管理</li>
-                            <li>多站点统一管理</li>
-                            <li>数据安全保障</li>
-                        </ul>
-                        <a href="#contact" class="service-link">
-                            <i class="fas fa-arrow-right"></i>
-                            企业咨询
-                        </a>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3 class="service-title">网站部署服务</h3>
-                        <p class="service-description">
-                            提供MDFriday网站的完整部署服务，从域名购买到服务器配置，让您专注于内容创作，技术部署交给我们。
-                        </p>
-                        <ul class="service-features">
-                            <li>域名注册指导</li>
-                            <li>服务器选择配置</li>
-                            <li>SSL证书部署</li>
-                            <li>CDN加速优化</li>
-                        </ul>
-                        <a href="#contact" class="service-link">
-                            <i class="fas fa-arrow-right"></i>
-                            部署咨询
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 作品展示区域 -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">MDFriday 产品生态</h2>
-                    <p class="section-subtitle">围绕MDFriday构建的完整产品生态系统，为您的知识分享提供全方位支持</p>
-                </div>
-                <div class="portfolio-filter">
-                    <button class="filter-btn active" data-filter="all">全部</button>
-                    <button class="filter-btn" data-filter="core">核心产品</button>
-                    <button class="filter-btn" data-filter="tools">辅助工具</button>
-                    <button class="filter-btn" data-filter="themes">主题模板</button>
-                    <button class="filter-btn" data-filter="services">服务平台</button>
-                </div>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item" data-category="core">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-edit"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">MDFriday Obsidian插件</h3>
-                            <p class="portfolio-description">专业的Obsidian笔记发布插件，右键即可将笔记转换为精美网站，支持本地构建和一键部署。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Obsidian API</span>
-                                <span class="tech-tag">Hugo</span>
-                            </div>
-                            <a href="https://github.com/mdfriday/obsidian-friday-plugin" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                GitHub项目
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="core">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-server"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">Hugoverse CMS服务器</h3>
-                            <p class="portfolio-description">Hugo无头CMS服务器，为MDFriday提供强大的后端支持，实现高效的内容管理和网站生成。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">Go</span>
-                                <span class="tech-tag">Hugo</span>
-                                <span class="tech-tag">REST API</span>
-                            </div>
-                            <a href="https://github.com/mdfriday/hugoverse" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                GitHub项目
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="tools">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-code"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">Shortcode组件系统</h3>
-                            <p class="portfolio-description">强大的短代码编译器，为MDFriday提供丰富的页面组件，支持自定义扩展和主题定制。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Webpack</span>
-                            </div>
-                            <a href="https://github.com/mdfriday/shortcode" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                GitHub项目
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="themes">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">主题模板库</h3>
-                            <p class="portfolio-description">精心设计的网站主题模板集合，涵盖博客、文档、作品集等多种类型，支持个性化定制。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">Hugo</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <a href="https://github.com/mdfriday/themes" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                主题仓库
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="services">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">MDFriday官方网站</h3>
-                            <p class="portfolio-description">MDFriday产品官方网站，提供插件下载、使用教程、社区支持等完整服务体验。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                            </div>
-                            <a href="https://sunwei.xyz/mdfriday" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                访问网站
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="tools">
-                        <div class="portfolio-image">
-                            <div class="portfolio-placeholder">
-                                <i class="fas fa-image"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3 class="portfolio-title">Notes图片生成器</h3>
-                            <p class="portfolio-description">为笔记内容生成精美的分享图片，支持多种模板和自定义样式，让您的知识分享更具吸引力。</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">Canvas API</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Node.js</span>
-                            </div>
-                            <a href="https://github.com/mdfriday/notes" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                GitHub项目
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 关于区域 -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2 class="section-title">关于我</h2>
-                        <div class="about-intro">
-                            <div class="about-avatar">
-                                <div class="avatar-placeholder">
-                                    <img src="me.png" alt="孙伟" class="about-photo">
-                                </div>
-                            </div>
-                            <div class="about-personal">
-                                <h3>孙伟 - MDFriday创始人</h3>
-                                <p class="about-title">MDFriday专业服务提供商</p>
-                            </div>
-                        </div>
-                        <p class="about-description">
-                            我是MDFriday的创始人，专注于为Obsidian用户提供专业的笔记发布解决方案。
-                            从MDFriday插件的开发到相关服务的提供，我致力于构建完整的知识分享生态系统。
-                            我的所有专业服务都围绕MDFriday展开，帮助用户将笔记轻松转换为精美的网站。
-                        </p>
-                        <div class="about-highlights">
-                            <div class="highlight-badge">
-                                <i class="fas fa-rocket"></i>
-                                <span>MDFriday创始人</span>
-                            </div>
-                            <div class="highlight-badge">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>专业培训师</span>
-                            </div>
-                            <div class="highlight-badge">
-                                <i class="fas fa-cog"></i>
-                                <span>技术服务专家</span>
-                            </div>
-                        </div>
-                        <div class="stats-grid">
-                            <div class="stat-item">
-                                <div class="stat-number">1000+</div>
-                                <div class="stat-label">用户信赖</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">3年</div>
-                                <div class="stat-label">产品打磨</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">100%</div>
-                                <div class="stat-label">开源承诺</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-skills">
-                        <h3>专业服务能力</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">MDFriday使用培训</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">定制主题设计</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">私有化部署</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">网站部署服务</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="88%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 联系区域 -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">联系我</h2>
-                    <p class="section-subtitle">欢迎加入MDFriday社区，一起探讨知识分享的无限可能</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>邮箱</h4>
-                                <p>me@sunwei.xyz</p>
-                                <small>MDFriday相关: service@mdfriday.com</small>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-weixin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>微信群</h4>
-                                <p>扫码加入MDFriday交流群</p>
-                                <div class="wechat-qr">
-                                    <div class="qr-code-container">
-                                        <img src="wechat-mdfriday.png" alt="MDFriday创意群 微信二维码" class="qr-code-image">
-                                        <p class="qr-code-title">MDFriday创意群</p>
-                                        <small class="qr-code-desc">扫码加入，一起交流讨论</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>GitHub</h4>
-                                <p>个人: github.com/sunwei</p>
-                                <small>MDFriday: github.com/mdfriday</small>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/sunwei" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://sunwei.xyz/mdfriday" target="_blank" class="social-link">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                            <a href="mailto:me@sunwei.xyz" class="social-link">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#wechat-qr" class="social-link">
-                                <i class="fab fa-weixin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contact-form">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">姓名</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required>
-                                <label for="email">邮箱</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="subject" name="subject" required>
-                                <label for="subject">主题</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                                <label for="message">消息</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                发送消息
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-user-circle"></i>
-                        <span>孙伟</span>
-                    </div>
-                    <p class="footer-description">
-                        MDFriday创始人，专注于为Obsidian用户提供专业的笔记发布服务，让知识分享变得简单而美好。
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">MDFriday服务</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services">使用培训指导</a></li>
-                        <li><a href="#services">定制主题设计</a></li>
-                        <li><a href="#services">私有化部署</a></li>
-                        <li><a href="#services">网站部署服务</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">联系方式</h4>
-                    <ul class="footer-links">
-                        <li>me@sunwei.xyz</li>
-                        <li>https://github.com/sunwei</li>
-                        <li>https://sunwei.xyz</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 孙伟 (sunwei.xyz). All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 回到顶部按钮 -->
-    <button class="back-to-top" id="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
     </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
 
-    <script src="script.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFZLCQBM2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-9MFZLCQBM2');
-    </script>
-</body>
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=3
+      
+         data-img-src-1="/img/triangle.jpg"
+      
+         data-img-src-2="/img/sphere.jpg"
+      
+         data-img-src-3="/img/hexagon.jpg"
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      
+      <div class="intro-header big-img" style="background-image: url('img/triangle.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>MDFriday Journal</h1>
+                  
+                    
+                      <hr class="small">
+                      <span class="page-subheading">Stories, releases, and ideas behind Markdown Friday.</span>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              
+                <h1>MDFriday Journal</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <span class="page-subheading">Stories, releases, and ideas behind Markdown Friday.</span>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+          <div class="well">
+            <h2 data-heading="Just dropped: Resume theme for Obsidian Plugin Friday!" dir="auto" id="just-dropped-resume-theme-for-obsidian-plugin-friday">Just dropped: Resume theme for Obsidian Plugin Friday!</h2>
+<p dir="auto">Minimal, professional, and perfect for showcasing your key achievements.<br>
+Huge thanks to <a data-tooltip-position="top" aria-label="https://x.com/3rdwave_themes" rel="noopener nofollow" class="external-link" href="https://x.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> for the stunning design!</p>
+<p dir="auto">🔗 <strong>Live demo:</strong> <a data-tooltip-position="top" aria-label="https://theme-resume.mdfriday.com/" rel="noopener nofollow" class="external-link" href="https://theme-resume.mdfriday.com/" target="_blank">Theme Resume</a></p>
+          </div>
+        
+
+        <div class="posts-list">
+          
+          
+          
+            <article class="post-preview">
+    <a href="/posts/2025-10-17-theme-resume-published.html">
+        <h2 class="post-title">Theme Resume Published</h2>
+        
+        <h3 class="post-subtitle">
+            Making a professional resume/CV website using AI
+        </h3>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  <i class="fas fa-calendar"></i>&nbsp;Posted on  10/17/2025
+  |&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  |&nbsp;<i class="fas fa-book"></i>&nbsp;188&nbsp;words
+
+
+  
+    
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sun Wei
+      
+    
+  
+
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h2 data-heading="Friday Update: Free Resume Theme Released!" dir="auto" id="friday-update-free-resume-theme-released">Friday Update: Free Resume Theme Released!</h2>
+<p dir="auto">Just dropped a Resume theme for Obsidian Plugin Friday!<br>
+Minimal, professional, and perfect for highlighting the important stuff.<br>
+Massive thanks to <a data-tooltip-position="top" aria-label="https://x.com/3rdwave_themes" rel="noopener nofollow" class="external-link" href="https://x.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> for the gorgeous design!<br>
+Turn your Markdown resume into a...</p>
+        <a href="/posts/2025-10-17-theme-resume-published.html" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    
+    <div class="blog-tags">
+        
+        <a href="/tags/mdfriday/index.html">MDFriday</a>, 
+        <a href="/tags/resume/index.html">Resume</a>, 
+        <a href="/tags/theme/index.html">Theme</a>
+    </div>
+    
+    
+
+</article>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+      
+
+<footer>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+            <li>
+              <a href="https://github.com/sunwei" title="github">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://x.com/szm_tech" title="twitter">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.linkedin.com/in/wayde-sun-aab70b23/" title="linkedin">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://sunwei.xyz" title="website">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="mailto:wayde.sun@gmail.com" title="email">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.facebook.com/wayde.sun.3" title="facebook">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.youtube.com/@sunwei-mdfriday" title="youtube">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://discord.gg/t7FHJ6qNzT" title="discord">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+        </ul>
+        <p class="credits copyright text-muted">
+
+          
+            <a href="">Sun Wei</a>
+          &nbsp;&bull;&nbsp;
+          
+
+          &copy;2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="/">MDFriday Journal</a>
+          
+        </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="credits theme-by text-muted">
+          Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="/js/katex.min.js"></script>
+<script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="/js/jquery-3.7.0.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
+
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/load-photoswipe.js"></script>
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFZLCQBM2"></script>
+      <script>
+        var doNotTrack = false;
+        if (false) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9MFZLCQBM2');
+        }
+      </script>
+    
+  
+
+
+<!--
+If you want to include any custom html just before </body>, put it in /layouts/partials/footer_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/footer_custom.html doesn't exist.
+-->
+
+
+    
+  </body>
 </html>
+
