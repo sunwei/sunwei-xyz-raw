@@ -6,9 +6,7 @@
 	}
 
 	servers {
-        protocol {
-            allow_h2 false
-        }
+        protocols h1
     }
 }
 
