@@ -9,6 +9,12 @@
 sunwei.xyz {
 	root * /root/web/sunwei-xyz-raw
 	file_server
+
+	servers {
+        protocol {
+            allow_h2 false
+        }
+    }
 }
 
 notes.sunwei.xyz {
