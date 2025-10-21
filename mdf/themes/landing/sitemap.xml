@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/index.html</loc>
+    <loc>/mdf/themes/landing/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/index.html</loc>
+    <loc>/mdf/themes/landing/tags/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/thanks.html</loc>
+    <loc>/mdf/themes/landing/thanks.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/index.html</loc>
+    <loc>/mdf/themes/landing/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

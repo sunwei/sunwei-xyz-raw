@@ -2,60 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/index.html</loc>
+    <loc>/mdf/themes/ob-plugin/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/categories/index.html"
+                href="/mdf/themes/ob-plugin/zh/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/categories/index.html"
+                href="/mdf/themes/ob-plugin/categories/index.html"
                 />
   </url><url>
-    <loc>/tags/index.html</loc>
+    <loc>/mdf/themes/ob-plugin/tags/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/index.html"
+                href="/mdf/themes/ob-plugin/zh/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/index.html"
+                href="/mdf/themes/ob-plugin/tags/index.html"
                 />
   </url><url>
-    <loc>/docs.html</loc>
+    <loc>/mdf/themes/ob-plugin/docs.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/docs.html"
+                href="/mdf/themes/ob-plugin/zh/docs.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/docs.html"
+                href="/mdf/themes/ob-plugin/docs.html"
                 />
   </url><url>
-    <loc>/index.html</loc>
+    <loc>/mdf/themes/ob-plugin/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/index.html"
+                href="/mdf/themes/ob-plugin/zh/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/index.html"
+                href="/mdf/themes/ob-plugin/index.html"
                 />
   </url>
 </urlset>

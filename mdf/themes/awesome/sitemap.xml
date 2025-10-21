@@ -2,412 +2,412 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/index.html</loc>
+    <loc>/mdf/themes/resume/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/categories/index.html"
+                href="/mdf/themes/resume/de/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/categories/index.html"
+                href="/mdf/themes/resume/fr/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/categories/index.html"
+                href="/mdf/themes/resume/ja/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/categories/index.html"
+                href="/mdf/themes/resume/pt/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/categories/index.html"
+                href="/mdf/themes/resume/zh/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/categories/index.html"
+                href="/mdf/themes/resume/categories/index.html"
                 />
   </url><url>
-    <loc>/tags/index.html</loc>
+    <loc>/mdf/themes/resume/tags/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/tags/index.html"
+                href="/mdf/themes/resume/de/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/tags/index.html"
+                href="/mdf/themes/resume/fr/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/tags/index.html"
+                href="/mdf/themes/resume/ja/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/tags/index.html"
+                href="/mdf/themes/resume/pt/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/index.html"
+                href="/mdf/themes/resume/zh/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/index.html"
+                href="/mdf/themes/resume/tags/index.html"
                 />
   </url><url>
-    <loc>/tags/mdfriday/index.html</loc>
+    <loc>/mdf/themes/resume/tags/mdfriday/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/de/tags/mdfriday/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/fr/tags/mdfriday/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/ja/tags/mdfriday/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/pt/tags/mdfriday/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/zh/tags/mdfriday/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/mdfriday/index.html"
+                href="/mdf/themes/resume/tags/mdfriday/index.html"
                 />
   </url><url>
-    <loc>/posts/001-how-it-works.html</loc>
+    <loc>/mdf/themes/resume/posts/001-how-it-works.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/de/posts/001-how-it-works.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/fr/posts/001-how-it-works.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/ja/posts/001-how-it-works.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/pt/posts/001-how-it-works.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/zh/posts/001-how-it-works.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/001-how-it-works.html"
+                href="/mdf/themes/resume/posts/001-how-it-works.html"
                 />
   </url><url>
-    <loc>/posts/002-about-mdfriday.html</loc>
+    <loc>/mdf/themes/resume/posts/002-about-mdfriday.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/de/posts/002-about-mdfriday.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/fr/posts/002-about-mdfriday.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/ja/posts/002-about-mdfriday.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/pt/posts/002-about-mdfriday.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/zh/posts/002-about-mdfriday.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/002-about-mdfriday.html"
+                href="/mdf/themes/resume/posts/002-about-mdfriday.html"
                 />
   </url><url>
-    <loc>/posts/003-markdown-syntax.html</loc>
+    <loc>/mdf/themes/resume/posts/003-markdown-syntax.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/de/posts/003-markdown-syntax.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/fr/posts/003-markdown-syntax.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/ja/posts/003-markdown-syntax.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/pt/posts/003-markdown-syntax.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/zh/posts/003-markdown-syntax.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/003-markdown-syntax.html"
+                href="/mdf/themes/resume/posts/003-markdown-syntax.html"
                 />
   </url><url>
-    <loc>/posts/004-math-typesetting.html</loc>
+    <loc>/mdf/themes/resume/posts/004-math-typesetting.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/de/posts/004-math-typesetting.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/fr/posts/004-math-typesetting.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/ja/posts/004-math-typesetting.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/pt/posts/004-math-typesetting.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/zh/posts/004-math-typesetting.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/004-math-typesetting.html"
+                href="/mdf/themes/resume/posts/004-math-typesetting.html"
                 />
   </url><url>
-    <loc>/posts/005-rich-content.html</loc>
+    <loc>/mdf/themes/resume/posts/005-rich-content.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/005-rich-content.html"
+                href="/mdf/themes/resume/de/posts/005-rich-content.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/005-rich-content.html"
+                href="/mdf/themes/resume/fr/posts/005-rich-content.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/005-rich-content.html"
+                href="/mdf/themes/resume/ja/posts/005-rich-content.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/005-rich-content.html"
+                href="/mdf/themes/resume/pt/posts/005-rich-content.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/005-rich-content.html"
+                href="/mdf/themes/resume/zh/posts/005-rich-content.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/005-rich-content.html"
+                href="/mdf/themes/resume/posts/005-rich-content.html"
                 />
   </url><url>
-    <loc>/posts/index.html</loc>
+    <loc>/mdf/themes/resume/posts/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/index.html"
+                href="/mdf/themes/resume/de/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/index.html"
+                href="/mdf/themes/resume/fr/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/index.html"
+                href="/mdf/themes/resume/ja/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/index.html"
+                href="/mdf/themes/resume/pt/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/index.html"
+                href="/mdf/themes/resume/zh/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/index.html"
+                href="/mdf/themes/resume/posts/index.html"
                 />
   </url><url>
-    <loc>/about.html</loc>
+    <loc>/mdf/themes/resume/about.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/about.html"
+                href="/mdf/themes/resume/de/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/about.html"
+                href="/mdf/themes/resume/fr/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/about.html"
+                href="/mdf/themes/resume/ja/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/about.html"
+                href="/mdf/themes/resume/pt/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/about.html"
+                href="/mdf/themes/resume/zh/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/about.html"
+                href="/mdf/themes/resume/about.html"
                 />
   </url><url>
-    <loc>/posts/006-comments.html</loc>
+    <loc>/mdf/themes/resume/posts/006-comments.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/posts/006-comments.html"
+                href="/mdf/themes/resume/de/posts/006-comments.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/posts/006-comments.html"
+                href="/mdf/themes/resume/fr/posts/006-comments.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/posts/006-comments.html"
+                href="/mdf/themes/resume/ja/posts/006-comments.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/posts/006-comments.html"
+                href="/mdf/themes/resume/pt/posts/006-comments.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/006-comments.html"
+                href="/mdf/themes/resume/zh/posts/006-comments.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/006-comments.html"
+                href="/mdf/themes/resume/posts/006-comments.html"
                 />
   </url><url>
-    <loc>/index.html</loc>
+    <loc>/mdf/themes/resume/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/de/index.html"
+                href="/mdf/themes/resume/de/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/fr/index.html"
+                href="/mdf/themes/resume/fr/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/ja/index.html"
+                href="/mdf/themes/resume/ja/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/pt/index.html"
+                href="/mdf/themes/resume/pt/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/index.html"
+                href="/mdf/themes/resume/zh/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/index.html"
+                href="/mdf/themes/resume/index.html"
                 />
   </url>
 </urlset>

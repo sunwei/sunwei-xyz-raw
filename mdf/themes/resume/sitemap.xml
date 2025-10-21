@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/themes/resume/categories/index.html</loc>
+    <loc>/mdf/themes/resume/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/themes/resume/tags/index.html</loc>
+    <loc>/mdf/themes/resume/tags/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/themes/resume/information.html</loc>
+    <loc>/mdf/themes/resume/information.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/themes/resume/projects.html</loc>
+    <loc>/mdf/themes/resume/projects.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/themes/resume/work-experience.html</loc>
+    <loc>/mdf/themes/resume/work-experience.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/themes/resume/index.html</loc>
+    <loc>/mdf/themes/resume/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

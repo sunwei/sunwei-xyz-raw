@@ -2,312 +2,312 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/index.html</loc>
+    <loc>/mdf/themes/beautiful/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/categories/index.html"
+                href="/mdf/themes/beautiful/zh/categories/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/categories/index.html"
+                href="/mdf/themes/beautiful/categories/index.html"
                 />
   </url><url>
-    <loc>/tags/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/index.html"
+                href="/mdf/themes/beautiful/zh/tags/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/index.html"
+                href="/mdf/themes/beautiful/tags/index.html"
                 />
   </url><url>
-    <loc>/tags/bigimg/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/bigimg/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/bigimg/index.html"
+                href="/mdf/themes/beautiful/zh/tags/bigimg/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/bigimg/index.html"
+                href="/mdf/themes/beautiful/tags/bigimg/index.html"
                 />
   </url><url>
-    <loc>/tags/code/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/code/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/code/index.html"
+                href="/mdf/themes/beautiful/zh/tags/code/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/code/index.html"
+                href="/mdf/themes/beautiful/tags/code/index.html"
                 />
   </url><url>
-    <loc>/tags/example/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/example/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/example/index.html"
+                href="/mdf/themes/beautiful/zh/tags/example/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/example/index.html"
+                href="/mdf/themes/beautiful/tags/example/index.html"
                 />
   </url><url>
-    <loc>/tags/markdown/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/markdown/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/markdown/index.html"
+                href="/mdf/themes/beautiful/zh/tags/markdown/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/markdown/index.html"
+                href="/mdf/themes/beautiful/tags/markdown/index.html"
                 />
   </url><url>
-    <loc>/tags/math/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/math/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/math/index.html"
+                href="/mdf/themes/beautiful/zh/tags/math/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/math/index.html"
+                href="/mdf/themes/beautiful/tags/math/index.html"
                 />
   </url><url>
-    <loc>/tags/photoswipe/index.html</loc>
+    <loc>/mdf/themes/beautiful/tags/photoswipe/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/tags/photoswipe/index.html"
+                href="/mdf/themes/beautiful/zh/tags/photoswipe/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/tags/photoswipe/index.html"
+                href="/mdf/themes/beautiful/tags/photoswipe/index.html"
                 />
   </url><url>
-    <loc>/posts/2017-03-20-photoswipe-gallery-sample.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2017-03-20-photoswipe-gallery-sample.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2017-03-20-photoswipe-gallery-sample.html"
+                href="/mdf/themes/beautiful/zh/posts/2017-03-20-photoswipe-gallery-sample.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2017-03-20-photoswipe-gallery-sample.html"
+                href="/mdf/themes/beautiful/posts/2017-03-20-photoswipe-gallery-sample.html"
                 />
   </url><url>
-    <loc>/posts/2015-01-15-pirates.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-01-15-pirates.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-01-15-pirates.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-01-15-pirates.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-01-15-pirates.html"
+                href="/mdf/themes/beautiful/posts/2015-01-15-pirates.html"
                 />
   </url><url>
-    <loc>/posts/2015-01-19-soccer.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-01-19-soccer.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-01-19-soccer.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-01-19-soccer.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-01-19-soccer.html"
+                href="/mdf/themes/beautiful/posts/2015-01-19-soccer.html"
                 />
   </url><url>
-    <loc>/posts/2015-01-27-dear-diary.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-01-27-dear-diary.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-01-27-dear-diary.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-01-27-dear-diary.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-01-27-dear-diary.html"
+                href="/mdf/themes/beautiful/posts/2015-01-27-dear-diary.html"
                 />
   </url><url>
-    <loc>/posts/2015-02-13-hamlet-monologue.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-02-13-hamlet-monologue.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-02-13-hamlet-monologue.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-02-13-hamlet-monologue.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-02-13-hamlet-monologue.html"
+                href="/mdf/themes/beautiful/posts/2015-02-13-hamlet-monologue.html"
                 />
   </url><url>
-    <loc>/posts/2015-02-20-test-markdown.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-02-20-test-markdown.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-02-20-test-markdown.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-02-20-test-markdown.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-02-20-test-markdown.html"
+                href="/mdf/themes/beautiful/posts/2015-02-20-test-markdown.html"
                 />
   </url><url>
-    <loc>/posts/2015-02-26-flake-it-till-you-make-it.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-02-26-flake-it-till-you-make-it.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-02-26-flake-it-till-you-make-it.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-02-26-flake-it-till-you-make-it.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-02-26-flake-it-till-you-make-it.html"
+                href="/mdf/themes/beautiful/posts/2015-02-26-flake-it-till-you-make-it.html"
                 />
   </url><url>
-    <loc>/posts/2016-03-08-code-sample.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2016-03-08-code-sample.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2016-03-08-code-sample.html"
+                href="/mdf/themes/beautiful/zh/posts/2016-03-08-code-sample.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2016-03-08-code-sample.html"
+                href="/mdf/themes/beautiful/posts/2016-03-08-code-sample.html"
                 />
   </url><url>
-    <loc>/posts/2017-03-05-math-sample.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2017-03-05-math-sample.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2017-03-05-math-sample.html"
+                href="/mdf/themes/beautiful/zh/posts/2017-03-05-math-sample.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2017-03-05-math-sample.html"
+                href="/mdf/themes/beautiful/posts/2017-03-05-math-sample.html"
                 />
   </url><url>
-    <loc>/posts/2017-03-07-bigimg-sample.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2017-03-07-bigimg-sample.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2017-03-07-bigimg-sample.html"
+                href="/mdf/themes/beautiful/zh/posts/2017-03-07-bigimg-sample.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2017-03-07-bigimg-sample.html"
+                href="/mdf/themes/beautiful/posts/2017-03-07-bigimg-sample.html"
                 />
   </url><url>
-    <loc>/posts/2015-01-04-first-post.html</loc>
+    <loc>/mdf/themes/beautiful/posts/2015-01-04-first-post.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/2015-01-04-first-post.html"
+                href="/mdf/themes/beautiful/zh/posts/2015-01-04-first-post.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/2015-01-04-first-post.html"
+                href="/mdf/themes/beautiful/posts/2015-01-04-first-post.html"
                 />
   </url><url>
-    <loc>/posts/index.html</loc>
+    <loc>/mdf/themes/beautiful/posts/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/posts/index.html"
+                href="/mdf/themes/beautiful/zh/posts/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/posts/index.html"
+                href="/mdf/themes/beautiful/posts/index.html"
                 />
   </url><url>
-    <loc>/about.html</loc>
+    <loc>/mdf/themes/beautiful/about.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/about.html"
+                href="/mdf/themes/beautiful/zh/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/about.html"
+                href="/mdf/themes/beautiful/about.html"
                 />
   </url><url>
-    <loc>/index.html</loc>
+    <loc>/mdf/themes/beautiful/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/zh/index.html"
+                href="/mdf/themes/beautiful/zh/index.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang=""
-                href="/index.html"
+                href="/mdf/themes/beautiful/index.html"
                 />
   </url>
 </urlset>
