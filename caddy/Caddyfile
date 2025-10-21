@@ -4,17 +4,17 @@
 		output file /var/log/caddy/access.log
 		format json
 	}
-}
-
-sunwei.xyz {
-	root * /root/web/sunwei-xyz-raw
-	file_server
 
 	servers {
         protocol {
             allow_h2 false
         }
     }
+}
+
+sunwei.xyz {
+	root * /root/web/sunwei-xyz-raw
+	file_server
 }
 
 notes.sunwei.xyz {
