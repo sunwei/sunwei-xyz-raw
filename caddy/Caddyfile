@@ -4,11 +4,19 @@
 		output file /var/log/caddy/access.log
 		format json
 	}
+
+	# 开启 debug 模式
+    debug
 }
 
 sunwei.xyz {
 	root * /root/web/sunwei-xyz-raw
 	file_server
+
+	log {
+        output file /var/log/caddy/error.log
+        level ERROR
+    }
 }
 
 notes.sunwei.xyz {
