@@ -4,10 +4,6 @@
 		output file /var/log/caddy/access.log
 		format json
 	}
-
-	servers {
-        protocols h1
-    }
 }
 
 sunwei.xyz {
