@@ -30,6 +30,20 @@
                 href="/tags/index.html"
                 />
   </url><url>
+    <loc>/tags/landing/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/zh/tags/landing/index.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/tags/landing/index.html"
+                />
+  </url><url>
     <loc>/tags/mdfriday/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -51,6 +65,16 @@
     <loc>/tags/theme/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/zh/tags/theme/index.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/tags/theme/index.html"
+                />
   </url><url>
     <loc>/tags/tutorial/index.html</loc>
     <changefreq>weekly</changefreq>
@@ -96,6 +120,20 @@
                 rel="alternate"
                 hreflang=""
                 href="/posts/tutorial/index.html"
+                />
+  </url><url>
+    <loc>/posts/2025-10-24-theme-landing-published.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/zh/posts/2025-10-24-theme-landing-published.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang=""
+                href="/posts/2025-10-24-theme-landing-published.html"
                 />
   </url><url>
     <loc>/posts/2025-10-17-theme-resume-published.html</loc>
