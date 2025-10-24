@@ -91,11 +91,11 @@
 		"id": 8,
 		"name": "Resume",
 		"author": "Jerry Kiely",
-		"version": "1.0",
+		"version": "1.1",
 		"screenshot": "https://sunwei.xyz/mdf/tn_resume.png",
-		"download_url": "https://sunwei.xyz/mdf/resume_theme.zip?version=1.0",
+		"download_url": "https://sunwei.xyz/mdf/resume_theme_east.zip?version=1.1",
 		"demo_url": "https://sunwei.xyz/mdf/themes/resume",
-		"demo_notes_url": "https://sunwei.xyz/mdf/resume_example.zip?version=1.0",
+		"demo_notes_url": "https://sunwei.xyz/mdf/resume_example.zip?version=1.1",
 		"tags": ["Resume"]
 	},
 	{
@@ -108,5 +108,27 @@
 		"demo_url": "https://sunwei.xyz/mdf/themes/landing",
 		"demo_notes_url": "https://sunwei.xyz/mdf/landing_example.zip?version=1.0",
 		"tags": ["Landing"]
+	},
+	{
+		"id": 10,
+		"name": "Resume Clean",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_resume_clean.png",
+		"download_url": "https://sunwei.xyz/mdf/resume_clean_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/resume-clean",
+		"demo_notes_url": "https://sunwei.xyz/mdf/resume_clean_example.zip?version=1.0",
+		"tags": ["Resume"]
+	},
+	{
+		"id": 11,
+		"name": "Resume Table",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_resume_table.png",
+		"download_url": "https://sunwei.xyz/mdf/resume_table_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/resume-table",
+		"demo_notes_url": "https://sunwei.xyz/mdf/resume_table_example.zip?version=1.0",
+		"tags": ["Resume"]
 	}
 ]
