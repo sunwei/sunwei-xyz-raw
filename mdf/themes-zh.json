@@ -130,5 +130,16 @@
 		"demo_url": "https://sunwei.xyz/mdf/themes/resume-table",
 		"demo_notes_url": "https://sunwei.xyz/mdf/resume_table_example.zip?version=1.0",
 		"tags": ["Resume"]
+	},
+	{
+		"id": 12,
+		"name": "Slides",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_slides_table.png",
+		"download_url": "https://sunwei.xyz/mdf/slides_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/slides",
+		"demo_notes_url": "https://sunwei.xyz/mdf/slides_example.zip?version=1.0",
+		"tags": ["Resume"]
 	}
 ]
