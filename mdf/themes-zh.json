@@ -140,6 +140,17 @@
 		"download_url": "https://sunwei.xyz/mdf/slides_theme_east.zip?version=1.0",
 		"demo_url": "https://sunwei.xyz/mdf/themes/slides",
 		"demo_notes_url": "https://sunwei.xyz/mdf/slides_example.zip?version=1.0",
-		"tags": ["Resume"]
+		"tags": ["Slides"]
+	},
+	{
+		"id": 13,
+		"name": "Portfolio",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_portfolio.png",
+		"download_url": "https://sunwei.xyz/mdf/portfolio_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/portfolio",
+		"demo_notes_url": "https://sunwei.xyz/mdf/portfolio_example.zip?version=1.0",
+		"tags": ["Portfolio"]
 	}
 ]
