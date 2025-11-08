@@ -1,26 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
-  <head>
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<html lang="en" data-theme="default"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="MDFriday" name="generator">
 
-<!-- Site Title, Description, Author, and Favicon -->
-<link rel="icon" href="/favicon.svg" >
-<title>
+    <title>
+        Home | 孙伟
+    </title>
 
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" >
 
-  
+    <!-- Preload fonts -->
+    <link href="/assets/fonts/noe-display-medium.woff" rel="preload" type="font/woff2" as="font" crossorigin="">
+    <link href="/assets/fonts/noe-display-medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 
+    <!-- Stylesheets -->
+    <link href="/assets/styles/themes.css" rel="stylesheet">
+    <link href="/assets/styles/main.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Noe Display';
+            font-style: normal;
+            font-display: swap;
+            font-weight: 500;
+            src: url('/assets/fonts/noe-display-medium.woff2') format('woff2'),
+            url('/assets/fonts/noe-display-medium.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'Lobster';
+            font-style: normal;
+            font-display: auto;
+            font-weight: 400;
+            src: url('/assets/fonts/lobster.woff2') format('woff2'),
+            url('/assets/fonts/lobster.woff') format('woff');
+        }
 
-MDFriday Journal
- | MDFriday Journal</title>
-<meta name="description" content="">
-<meta name="author" content="Sun Wei"/><script type="application/ld+json">
+        /* Rainbow Road Theme Extra Styles */
+        [data-theme='rainbow'] body {
+            background-image: url('/assets/images/stars.gif');
+            text-shadow: 0 0 2px;
+        }
+        [data-theme='rainbow'] .header__verification {
+            animation: rainbow 1s linear infinite;
+        }
+
+        /* Lobster Theme Extra Styles */
+
+        [data-theme='lobster'] {
+            --font-family-display: "Lobster", cursive;
+            cursor: url('/assets/images/lobster-cursor.png'), auto;
+        }
+
+        [data-theme='lobster'] a,
+        [data-theme='lobster'] button {
+            cursor: url('/assets/images/lobster-cursor-hover.png'), auto;
+        }
+    </style>
+
+    <!-- Meta Description -->
+    <meta content="" name="description">
+
+    <!-- Meta Tags --><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "MDFriday Journal",
+    "name": "孙伟",
     
     "url": "/"
 }
@@ -38,513 +82,284 @@ MDFriday Journal
 }
 </script>
 
-<meta property="og:title" content="MDFriday Journal" />
-<meta property="og:description" content="A professional journal by Sun Wei, creator of MDFriday — exploring the intersection of Markdown, creativity, and engineering.">
-<meta property="og:url" content="http://index.html/" />
+<meta property="og:title" content="Home" />
+<meta property="og:url" content="/index.html" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="MDFriday Journal" />
+<meta property="og:site_name" content="孙伟" />
 
-  <meta name="twitter:title" content="MDFriday Journal" />
-  <meta name="twitter:description" content="A professional journal by Sun Wei, creator of MDFriday — exploring the intersection of Markdown, creativity, and engineering.">
+  <meta name="twitter:title" content="Home" />
   <meta name="twitter:card" content="summary_large_image" />
-<link rel="alternate" href="/index.xml" type="application/rss+xml" title="MDFriday Journal">
-
-  <link rel="stylesheet" href="/css/katex.min.css" />
-  <link rel="stylesheet" href="/fontawesome/css/all.css" />
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-
-  <link rel="stylesheet" href="/css/main.css" />
-
-  <link rel="stylesheet" href="/css/fonts.css" />
-
-  <link rel="stylesheet" href="/css/highlight.min.css" />
-  <link rel="stylesheet" href="/css/codeblock.css" />
-
-  <link rel="stylesheet" href="/css/photoswipe.min.css" />
-  <link rel="stylesheet" href="/css/photoswipe.default-skin.min.css" /><!--
-If you want to include any custom html just before </head>, put it in /layouts/partials/head_custom.html
-Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/head_custom.html doesn't exist.
--->
 
 
 
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">MDFriday Journal</a>
-    </div>
+    <!-- Canonical URL -->
+    <link href="/index.html" rel="canonical">
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-
-        
-        
-        <li>
-          <a title="Home" href="/index.html">Home</a>
-        </li>
-        
-        
-        
-        <li class="navlinks-container">
-          <a class="navlinks-parent" role="button" tabindex="0">MDFriday</a>
-          <div class="navlinks-children">
-            
-            <a href="/posts/tutorial/001-install.html">Download</a>
-            
-          </div>
-        </li>
-        
-        
-        
-        <li>
-          <a title="About" href="/about.html">About</a>
-        </li>
-        
-        
-        
-        <li>
-          <a title="Tags" href="/tags">Tags</a>
-        </li>
-        
-        
-
-        
-          
-            <li>
-              
-                
-                  <a href="/zh/index.html">中文</a>
-                
-              
-            </li>
-          
-        
-
-        
-      </ul>
-    </div>
-
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a title="MDFriday Journal" href="/">
-          <img class="avatar-img" src=/logo.png alt="MDFriday Journal" />
+    <!-- Custom Head --><!-- Custom head content can be added here -->
+</head>
+<body><!-- Scripts to be loaded at the start of body -->
+<div class="hfeed layout" role="document"><header class="header" role="banner">
+    <div class="container header__inner">
+        <a href="/index.html" class="header__brand" rel="home"><img alt="Sun Wei"
+                 class="header__avatar"
+                 height="48" width="48"
+                 src="/assets/images/avatar.png"
+            ><span class="header__name">
+                <span>孙伟</span>
+            </span>
         </a>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-<!-- Search Modal -->
-
-
-    <!--
-Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
--->
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-<!-- Background of PhotoSwipe.
-     It's a separate element, as animating opacity is faster than rgba(). -->
-<div class="pswp__bg"></div>
-<!-- Slides wrapper with overflow:hidden. -->
-<div class="pswp__scroll-wrap">
-    <!-- Container that holds slides.
-      PhotoSwipe keeps only 3 of them in DOM to save memory.
-      Don't modify these 3 pswp__item elements, data is added later on. -->
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-    <div class="pswp__ui pswp__ui--hidden">
-    <div class="pswp__top-bar">
-      <!--  Controls are self-explanatory. Order can be changed. -->
-      <div class="pswp__counter"></div>
-      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-      <button class="pswp__button pswp__button--share" title="Share"></button>
-      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-      <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-      <!-- element will get class pswp__preloader--active when preloader is running -->
-      <div class="pswp__preloader">
-        <div class="pswp__preloader__icn">
-          <div class="pswp__preloader__cut">
-            <div class="pswp__preloader__donut"></div>
-          </div>
+        <div class="header__nav">
+            <nav class="js-nav nav" role="navigation" tabindex="-1">
+                <button class="iconbtn js-nav-toggle nav__togglebtn" aria-controls="nav-menu" aria-expanded="false">
+                    <span class="sr-only">toggle menu</span>
+                    <span class="menuicon">
+                        <span class="menuicon__bar"></span>
+                        <span class="menuicon__bar"></span>
+                        <span class="menuicon__bar"></span>
+                        <span class="menuicon__bar"></span>
+                    </span>
+                </button>
+                <div class="nav__content">
+                    <ul class="js-nav-menu nav__menu" id="nav-menu"><li class="nav__item nav__item--active">
+                            <a href="/"
+                               class="nav__link"
+                               aria-current="page">
+                                Home
+                            </a>
+                        </li><li class="nav__item">
+                            <a href="/posts"
+                               class="nav__link"
+                               >
+                                Posts
+                            </a>
+                        </li><li class="nav__item">
+                            <a href="/about.html"
+                               class="nav__link"
+                               >
+                                About
+                            </a>
+                        </li></ul>
+                </div>
+                <div class="nav__bg">
+                    <div class="nav__bg__circle"></div>
+                </div>
+            </nav>
         </div>
-      </div>
     </div>
-    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-      <div class="pswp__share-tooltip"></div>
-    </div>
-    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-    </button>
-    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-    </button>
-    <div class="pswp__caption">
-      <div class="pswp__caption__center"></div>
-    </div>
-    </div>
-    </div>
+</header>
+
+<main class="container main" id="main" role="main" tabindex="-1"><p dir="auto"><div class="fade-in hero">
+    <div class="hero__inner">
+        <h1 class="hero__title">少工作，多赚钱。 <br/> 享受生活！</h1>
+        
+<p class="hero__pretitle"><a href="about.html">Sun Wei</a></p>
+
+
+<div class="hero__content">
+    
+Join us and witness every step as a one-person company grows from chaos to clarity — 
+with <a href="https://mdfriday.com" class="hero__link hero__link--codista">MDFriday</a>
+ as the engine behind it.
+<br/><br/>
+<a href="https://sunwei.xyz/subscribe.html" class="hero__link hero__link--mastodon">Get free weekly letters.</a>
+
+
 </div>
 
 
 
-
-
-
-  
-    <div id="header-big-imgs" data-num-img=3
-      
-         data-img-src-1="/img/triangle.jpg"
-      
-         data-img-src-2="/img/sphere.jpg"
-      
-         data-img-src-3="/img/hexagon.jpg"
-      ></div>
-  
-
-  <header class="header-section has-img">
-    
-      
-      <div class="intro-header big-img" style="background-image: url('img/triangle.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>MDFriday Journal</h1>
-                  
-                    
-                      <hr class="small">
-                      <span class="page-subheading">Stories, releases, and ideas behind Markdown Friday.</span>
-                    
-                  
-                  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    
-    <div class="intro-header no-img">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              
-                <h1>MDFriday Journal</h1>
-              
-              
-                <hr class="small">
-              
-              
+    </div>
+</div>
+</p><div class="u-mb4">
+        <h2>Portfolio</h2>
+        <div class="featuredposts">
+            <ul class="featuredposts__list">
                 
-                  <span class="page-subheading">Stories, releases, and ideas behind Markdown Friday.</span>
+                <li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/retro.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/projects/001-how-it-works.html" class="featuredpost__link">
+            <span class="featuredpost__title">MDFriday</span>
+        </a><p class="featuredpost__description">Just Write. MDFriday brings it to life.</p></div>
+</div>
+
+                </li><li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/colors.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/projects/002-about-mdfriday.html" class="featuredpost__link">
+            <span class="featuredpost__title">Book</span>
+        </a><p class="featuredpost__description">Deeply dive into Hugo source code.</p></div>
+</div>
+
+                </li></ul>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="u-mb4">
+        <h2>Featured Posts</h2>
+        <div class="featuredposts">
+            <ul class="featuredposts__list">
                 
-              
-              
-            </div>
-          </div>
+                <li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/analytics.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/posts/001-how-it-works.html" class="featuredpost__link">
+            <span class="featuredpost__title">How MDFriday Works?</span>
+        </a><p class="featuredpost__description">Guide to MDFriday usage in Obsidian</p></div>
+</div>
+
+                </li><li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/chat.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/posts/002-about-mdfriday.html" class="featuredpost__link">
+            <span class="featuredpost__title">About MDFriday</span>
+        </a><p class="featuredpost__description">Introduction to MDFriday</p></div>
+</div>
+
+                </li><li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/chameleon.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/posts/003-markdown-syntax.html" class="featuredpost__link">
+            <span class="featuredpost__title">Markdown Syntax Guide</span>
+        </a><p class="featuredpost__description">Sample article showcasing basic Markdown syntax and formatting for HTML elements.</p></div>
+</div>
+
+                </li><li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/mindset.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/posts/004-math-typesetting.html" class="featuredpost__link">
+            <span class="featuredpost__title">Math Typesetting - use Mathematical notation in blog posts</span>
+        </a><p class="featuredpost__description">A brief guide to use KaTeX</p></div>
+</div>
+
+                </li><li class="featuredposts__item">
+                    <div class="featuredpost" style="background-color: #f5f5f5;"><picture>
+        <img alt="" 
+             class="featuredpost__image" 
+             height="500"
+             src="/assets/images/featured/spacejam.jpg" 
+             width="500" 
+             decoding="auto"
+             loading="eager"
+             sizes="(min-width:1270px) 264px, 95vw">
+    </picture><div class="featuredpost__inner">
+        <a href="/posts/005-rich-content.html" class="featuredpost__link">
+            <span class="featuredpost__title">Rich Content</span>
+        </a><p class="featuredpost__description">A brief description of Hugo Shortcodes</p></div>
+</div>
+
+                </li></ul>
+            <p class="featuredposts__footer">
+                <a href="/posts/" class="featuredposts__see-all">
+                    See All Posts<svg class="icon icon--arrow-right" height="24" role="img" width="24" aria-hidden="true">
+    <use xlink:href="/assets/icons/icons.sprite.svg#svg-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+</svg>
+</a>
+            </p>
         </div>
-      </div>
     </div>
-  
-  </header>
-
-
-    
-  <div role="main" class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-          <div class="well">
-            <h2 data-heading="Just dropped: Resume theme for Obsidian Plugin Friday!" dir="auto" id="just-dropped-resume-theme-for-obsidian-plugin-friday">Just dropped: Resume theme for Obsidian Plugin Friday!</h2>
-<p dir="auto">Minimal, professional, and perfect for showcasing your key achievements.<br>
-Huge thanks to <a data-tooltip-position="top" aria-label="https://x.com/3rdwave_themes" rel="noopener nofollow" class="external-link" href="https://x.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> for the stunning design!</p>
-<p dir="auto">🔗 <strong>Live demo:</strong> <a data-tooltip-position="top" aria-label="https://theme-resume.mdfriday.com/" rel="noopener nofollow" class="external-link" href="https://theme-resume.mdfriday.com/" target="_blank">Theme Resume</a></p>
-          </div>
-        
-
-        <div class="posts-list">
-          
-          
-          
-            <article class="post-preview">
-    <a href="/posts/2025-10-24-theme-landing-published.html">
-        <h2 class="post-title">Theme Landing Published</h2>
-        
-        <h3 class="post-subtitle">
-            Build a professional book or digital product landing page in minutes
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  <i class="fas fa-calendar"></i>&nbsp;Posted on  10/24/2025
-  |&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  |&nbsp;<i class="fas fa-book"></i>&nbsp;211&nbsp;words
-
-
-  
-    
-      
-        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sun Wei
-      
-    
-  
-
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <h2 data-heading="Friday Update: Free Landing Theme Released!" dir="auto" id="friday-update-free-landing-theme-released">Friday Update: Free Landing Theme Released!</h2>
-<p dir="auto">Excited to announce the <strong>Landing Theme – DevBook</strong> is now available in the <a data-tooltip-position="top" aria-label="https://obsidian.mdfriday.com/" rel="noopener nofollow" class="external-link" href="https://obsidian.mdfriday.com/" target="_blank">Obsidian Friday</a> Plugin!<br>
-Perfect for developers, authors, and creators who want to <strong>launch a beautiful landing page</strong> for their book, course,...</p>
-        <a href="/posts/2025-10-24-theme-landing-published.html" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    
-    <div class="blog-tags">
-        
-        <a href="/tags/landing/index.html">Landing</a>, 
-        <a href="/tags/mdfriday/index.html">MDFriday</a>, 
-        <a href="/tags/theme/index.html">Theme</a>
-    </div>
-    
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="/posts/2025-10-17-theme-resume-published.html">
-        <h2 class="post-title">Theme Resume Published</h2>
-        
-        <h3 class="post-subtitle">
-            Making a professional resume/CV website using AI
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  <i class="fas fa-calendar"></i>&nbsp;Posted on  10/17/2025
-  |&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  |&nbsp;<i class="fas fa-book"></i>&nbsp;188&nbsp;words
-
-
-  
-    
-      
-        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sun Wei
-      
-    
-  
-
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <h2 data-heading="Friday Update: Free Resume Theme Released!" dir="auto" id="friday-update-free-resume-theme-released">Friday Update: Free Resume Theme Released!</h2>
-<p dir="auto">Just dropped a Resume theme for Obsidian Plugin Friday!<br>
-Minimal, professional, and perfect for highlighting the important stuff.<br>
-Massive thanks to <a data-tooltip-position="top" aria-label="https://x.com/3rdwave_themes" rel="noopener nofollow" class="external-link" href="https://x.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> for the gorgeous design!<br>
-Turn your Markdown resume into a...</p>
-        <a href="/posts/2025-10-17-theme-resume-published.html" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    
-    <div class="blog-tags">
-        
-        <a href="/tags/mdfriday/index.html">MDFriday</a>, 
-        <a href="/tags/resume/index.html">Resume</a>, 
-        <a href="/tags/theme/index.html">Theme</a>
-    </div>
-    
-    
-
-</article>
-          
-        </div>
-
-        
-      </div>
-    </div>
-  </div>
-
-      
-
-<footer>
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links">
-          
-            <li>
-              <a href="https://github.com/sunwei" title="github">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://x.com/szm_tech" title="twitter">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://www.linkedin.com/in/wayde-sun-aab70b23/" title="linkedin">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://sunwei.xyz" title="website">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-link fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="mailto:wayde.sun@gmail.com" title="email">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://www.facebook.com/wayde.sun.3" title="facebook">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://www.youtube.com/@sunwei-mdfriday" title="youtube">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-            <li>
-              <a href="https://discord.gg/t7FHJ6qNzT" title="discord">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          
-
-        </ul>
-        <p class="credits copyright text-muted">
-
-          
-            <a href="">Sun Wei</a>
-          &nbsp;&bull;&nbsp;
-          
-
-          &copy;2025
-
-          
-            &nbsp;&bull;&nbsp;
-            <a href="/">MDFriday Journal</a>
-          
+</main>
+<footer class="footer h-card" role="contentinfo">
+    <div class="container footer__inner">
+        <p class="footer__item">
+            <strong>© 2025 </strong>
+            All Rights Reserved.
         </p>
-        <!-- Please don't remove this, keep my open source work credited :) -->
-        <p class="credits theme-by text-muted">
-          Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
-        </p>
-      </div>
+        <p class="footer__item footer__item--right"><a href="https://yourwebsite.com" class="footer__icon" title="Website" target="_blank" rel="noopener">
+                                <span class="sr-only">Website</span><svg class="icon icon--website" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+</svg>
+</a><a href="mailto:youremail@domain.com" class="footer__icon" title="Email" target="_blank" rel="noopener">
+                                <span class="sr-only">Email</span><svg class="icon icon--email" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+</svg>
+</a><a href="https://facebook.com/username" class="footer__icon" title="Facebook" target="_blank" rel="noopener">
+                                <span class="sr-only">Facebook</span><svg class="icon icon--facebook" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+</svg>
+</a><a href="https://github.com/username" class="footer__icon" title="Github" target="_blank" rel="noopener">
+                                <span class="sr-only">Github</span><svg class="icon icon--github" height="24" role="img" width="24" aria-hidden="true">
+    <use xlink:href="/assets/icons/icons.sprite.svg#svg-github" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+</svg>
+</a><a href="https://twitter.com/username" class="footer__icon" title="Twitter" target="_blank" rel="noopener">
+                                <span class="sr-only">Twitter</span><svg class="icon icon--twitter" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+</svg>
+</a><a href="https://linkedin.com/in/username" class="footer__icon" title="Linkedin" target="_blank" rel="noopener">
+                                <span class="sr-only">Linkedin</span><svg class="icon icon--linkedin" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+</a><a href="https://instagram.com/username" class="footer__icon" title="Instagram" target="_blank" rel="noopener">
+                                <span class="sr-only">Instagram</span><svg class="icon icon--instagram" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg>
+</a><a href="https://youtube.com/user/username" class="footer__icon" title="Youtube" target="_blank" rel="noopener">
+                                <span class="sr-only">Youtube</span><svg class="icon icon--youtube" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+</svg>
+</a><a href="https://medium.com/@username" class="footer__icon" title="Medium" target="_blank" rel="noopener">
+                                <span class="sr-only">Medium</span><svg class="icon icon--medium" height="24" role="img" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+</svg>
+</a></p>
     </div>
-  </div>
+    
+  
+
+
+    
 </footer>
-
-<script defer src="/js/katex.min.js"></script>
-<script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-<script src="/js/jquery-3.7.0.slim.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
-<script src="/js/main.js"></script>
-
-<script src="/js/highlight.min.js"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
-<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
-
-<script src="/js/photoswipe.min.js"></script>
-<script src="/js/photoswipe-ui-default.min.js"></script>
-
-<script src="/js/load-photoswipe.js"></script>
-
-
-  
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFZLCQBM2"></script>
-      <script>
-        var doNotTrack = false;
-        if (false) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-9MFZLCQBM2');
-        }
-      </script>
-    
-  
-
-
-<!--
-If you want to include any custom html just before </body>, put it in /layouts/partials/footer_custom.html
-Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/footer_custom.html doesn't exist.
--->
-
-
-    
-  </body>
+</div><!-- Scripts to be loaded at the end of body -->
+<script type="module" src="/assets/scripts/main.js"></script>
+</body>
 </html>
-

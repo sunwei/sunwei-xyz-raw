@@ -5,157 +5,65 @@
     <loc>/categories/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/categories/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/categories/index.html"
-                />
   </url><url>
     <loc>/tags/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/tags/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/tags/index.html"
-                />
-  </url><url>
-    <loc>/tags/landing/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>/tags/mdfriday/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/tags/mdfriday/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/tags/mdfriday/index.html"
-                />
   </url><url>
-    <loc>/tags/resume/index.html</loc>
+    <loc>/posts/001-how-it-works.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/theme/index.html</loc>
+    <loc>/projects/001-how-it-works.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/tutorial/index.html</loc>
+    <loc>/posts/002-about-mdfriday.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/posts/tutorial/001-install.html</loc>
+    <loc>/projects/002-about-mdfriday.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/posts/tutorial/001-install.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/posts/tutorial/001-install.html"
-                />
+  </url><url>
+    <loc>/posts/003-markdown-syntax.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/posts/004-math-typesetting.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/posts/005-rich-content.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>/posts/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/posts/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/posts/index.html"
-                />
   </url><url>
-    <loc>/posts/tutorial/index.html</loc>
+    <loc>/projects/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/posts/tutorial/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/posts/tutorial/index.html"
-                />
-  </url><url>
-    <loc>/posts/2025-10-24-theme-landing-published.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/posts/2025-10-24-theme-landing-published.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/posts/2025-10-24-theme-landing-published.html"
-                />
-  </url><url>
-    <loc>/posts/2025-10-17-theme-resume-published.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/posts/2025-10-17-theme-resume-published.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/posts/2025-10-17-theme-resume-published.html"
-                />
   </url><url>
     <loc>/about.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/about.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/about.html"
-                />
+  </url><url>
+    <loc>/subscribe.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/thanks.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/zh/index.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang=""
-                href="/index.html"
-                />
   </url>
 </urlset>

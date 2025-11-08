@@ -5,7 +5,7 @@
     <meta content="MDFriday" name="generator">
 
     <title>
-        category | 孙伟
+        MDFriday | 孙伟
     </title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" >
@@ -81,19 +81,78 @@
    "email": "team@mdfriday.org",
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "/projects/001-how-it-works.html",
+          "name": "Mdfriday"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sun Wei"
+  },
+  "headline": "MDFriday",
+  "description" : "MDFriday — Just Write. MDFriday brings it to life.
+Awesome Theme Story
+Awesome is for creators who see through the noise —
+those who want their words to speak,
+not their design to shout.
+Simple. Clean. Deadly precise.
+That’s Awesome.
+Like John Wick - "Yeah, I’m thinking I’m back."
+---...",
+  "inLanguage" : "en",
+  "wordCount": 488,
+  "datePublished" : "Fri Oct 10 2025 08:00:00 GMT+0800 (China Standard Time)",
+  "dateModified" : "Fri Oct 10 2025 08:00:00 GMT+0800 (China Standard Time)",
+  "image" : "/",
+  "keywords" : [ "MDFriday" ],
+  "mainEntityOfPage" : "/projects/001-how-it-works.html",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="category" />
-<meta property="og:url" content="/categories/index.html" />
+
+<meta property="og:title" content="MDFriday" />
+<meta property="og:description" content="Just Write. MDFriday brings it to life.">
+<meta property="og:url" content="/projects/001-how-it-works.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="孙伟" />
 
-  <meta name="twitter:title" content="category" />
+  <meta name="twitter:title" content="MDFriday" />
+  <meta name="twitter:description" content="Just Write. MDFriday brings it to life.">
   <meta name="twitter:card" content="summary_large_image" />
 
 
 
     <!-- Canonical URL -->
-    <link href="/categories/index.html" rel="canonical">
+    <link href="/projects/001-how-it-works.html" rel="canonical">
 
     <!-- Custom Head --><!-- Custom head content can be added here -->
 </head>
@@ -149,14 +208,158 @@
 </header>
 
 <main class="container main" id="main" role="main" tabindex="-1">
-    <div class="page page--blog">
-        <header class="page__header">
-            <h1 class="page__title">category</h1></header>
-        
-        <div class="page__content">
-            <ol class="postlist" reversed start="0"></ol>
+    <article aria-labelledby="001-how-it-works-title" class="h-entry post" id="001-how-it-works" itemscope
+             itemtype="http://schema.org/BlogPosting" role="article">
+        <header class="post__header">
+            <h1 class="p-name post__title title" id="001-how-it-works-title"
+                itemprop="headline">MDFriday</h1>
+            <div class="post__meta">
+                <p class="u-mr2">
+                    <span>Just Write. MDFriday brings it to life.</span>
+                </p>
+            </div>
+        </header>
+        <div class="e-content markdown post__content" itemprop="articleBody">
+            <p dir="auto"><strong>MDFriday</strong> — Just Write. MDFriday brings it to life.</p>
+<h2 data-heading="Awesome Theme Story" dir="auto" id="awesome-theme-story">Awesome Theme Story</h2>
+<p dir="auto">Awesome is for creators who see through the noise —<br>
+those who want their words to speak,<br>
+not their design to shout.</p>
+<p dir="auto">Simple. Clean. Deadly precise.<br>
+That’s Awesome.</p>
+<p dir="auto">Like <em>John Wick</em> - "Yeah, I’m thinking I’m back."</p>
+<hr>
+<h2 data-heading="⚙️ Quick Start" dir="auto" id="quick-start">⚙️ Quick Start</h2>
+<ol>
+<li dir="auto">Open <strong>Obsidian’s Community Plugins</strong></li>
+<li dir="auto">Search for <strong>Friday</strong> and install</li>
+<li dir="auto">Choose a theme from the MDFriday panel</li>
+<li dir="auto">Download the theme’s sample notes</li>
+<li dir="auto">Right-click a note → <strong>Publish to Web</strong></li>
+<li dir="auto">Click <strong>Preview</strong> to see it live locally</li>
+</ol>
+<p dir="auto">Once previewed, edit the sample notes with your own content —<br>
+and you’ve got your personal site!</p>
+<p dir="auto">You can:</p>
+<ul>
+<li dir="auto">Export the static site and upload it anywhere</li>
+<li dir="auto">Or configure cloud settings to <strong>publish directly</strong> with one click</li>
+</ul>
+<hr>
+<h2 data-heading="🧩 Architecture Overview" dir="auto" id="architecture-overview">🧩 Architecture Overview</h2>
+<p dir="auto">MDFriday consists of three main parts:</p>
+<ol>
+<li dir="auto">
+<p><strong>Obsidian Plugin</strong></p>
+<ul>
+<li dir="auto">Provides the editing and theme management interface</li>
+<li dir="auto">Supports preview, export, and publishing</li>
+<li dir="auto">Lets users install themes and sample notes with one click</li>
+</ul>
+</li>
+<li dir="auto">
+<p><strong>Shortcode Rendering Engine</strong></p>
+<ul>
+<li dir="auto">A lightweight Hugo-style templating system</li>
+<li dir="auto">Allows embedding of custom visual components (cards, galleries, etc.)</li>
+<li dir="auto">Implemented in TypeScript, cross-platform compatible</li>
+</ul>
+</li>
+<li dir="auto">
+<p><strong>Build &amp; Publishing System</strong></p>
+<ul>
+<li dir="auto">Converts Markdown + Shortcodes → static HTML site</li>
+<li dir="auto">Automatically applies selected theme (Tailwind + template engine)</li>
+<li dir="auto">Exports ready-to-host files</li>
+<li dir="auto">Optional cloud publishing (Cloudflare / GitHub Pages / custom)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 data-heading="🧠 Workflow" dir="auto" id="workflow">🧠 Workflow</h2>
+<ol>
+<li dir="auto">
+<p><strong>Write Markdown</strong><br>
+Create and edit notes in Obsidian — shortcodes included.</p>
+</li>
+<li dir="auto">
+<p><strong>Choose a Theme</strong><br>
+Each theme contains templates, sample notes, and style assets.<br>
+Themes are fully customizable and easy to preview.</p>
+</li>
+<li dir="auto">
+<p><strong>Preview &amp; Build</strong><br>
+Click <strong>Preview</strong> to see your site locally.<br>
+MDFriday renders Markdown + Shortcodes + Theme seamlessly.</p>
+</li>
+<li dir="auto">
+<p><strong>Publish</strong></p>
+<ul>
+<li dir="auto">Export the static site and upload anywhere</li>
+<li dir="auto">Or configure cloud credentials for one-click publishing</li>
+<li dir="auto">Includes SEO meta tags and OpenGraph data automatically</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 data-heading="🔧 Tech Stack &amp; Design Principles" dir="auto" id="tech-stack-amp-design-principles">🔧 Tech Stack &amp; Design Principles</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Technology</th>
+<th>Design Principle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>Obsidian</td>
+<td>Centralized, distraction-free creation</td>
+</tr>
+<tr>
+<td>Renderer</td>
+<td>TypeScript (<code>text/template</code> compatible)</td>
+<td>Consistency &amp; extensibility</td>
+</tr>
+<tr>
+<td>Styling</td>
+<td>Tailwind CSS</td>
+<td>Minimal &amp; themeable</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Node.js / ESBuild</td>
+<td>Fast and modular</td>
+</tr>
+<tr>
+<td>Deploy</td>
+<td>Cloudflare / GitHub Pages / Local</td>
+<td>Flexible and user-controlled</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 data-heading="🪄 Everything Starts with Markdown" dir="auto" id="everything-starts-with-markdown">🪄 Everything Starts with Markdown</h2>
+<p dir="auto">MDFriday doesn’t require any new syntax or tools.<br>
+Every site begins with a simple <code>.md</code> file.<br>
+Themes define <strong>how it looks</strong>,<br>
+Shortcodes define <strong>how it feels</strong>.</p>
+<blockquote dir="auto">
+<p>✨ TL;DR:<br>
+<strong>Write Markdown → Render → Build → Publish</strong><br>
+No code. No config. No distractions.</p>
+</blockquote>
+<hr>
+<h2 data-heading="👨‍💻 A Note from the Author" dir="auto" id="a-note-from-the-author">👨‍💻 A Note from the Author</h2>
+<blockquote dir="auto">
+<p>“MDFriday is built to grow with creators —<br>
+from a single note to a personal brand site.<br>
+I want to help you turn your content into digital assets.”</p>
+<p>— Sun Wei</p>
+</blockquote>
         </div>
-    </div>
+    </article>
 </main>
 <footer class="footer h-card" role="contentinfo">
     <div class="container footer__inner">
