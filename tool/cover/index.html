@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面制作工具 - 小红书/B站/YouTube</title>
+  <script type="module" crossorigin src="/assets/index-BOXdrS77.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DBpodmX1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📸 视频封面制作工具</h1>
+            <p class="subtitle">支持小红书、B站、YouTube等多平台</p>
+        </header>
+
+        <div class="main-content">
+            <!-- 左侧控制面板 -->
+            <div class="control-panel">
+                <section class="control-section">
+                    <h3>📷 上传背景图片</h3>
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="imageInput" accept="image/*" hidden>
+                        <div class="upload-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p>点击或拖拽上传图片</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <h3>📐 选择比例</h3>
+                    <div class="ratio-buttons">
+                        <button class="ratio-btn" data-ratio="16:9" data-width="1920" data-height="1080">
+                            <span class="ratio-icon">🖥</span>
+                            <span>16:9</span>
+                            <span class="ratio-desc">横屏/YouTube</span>
+                        </button>
+                        <button class="ratio-btn" data-ratio="9:16" data-width="1080" data-height="1920">
+                            <span class="ratio-icon">📱</span>
+                            <span>9:16</span>
+                            <span class="ratio-desc">竖屏/抖音</span>
+                        </button>
+                        <button class="ratio-btn active" data-ratio="4:3" data-width="1600" data-height="1200">
+                            <span class="ratio-icon">🖼</span>
+                            <span>4:3</span>
+                            <span class="ratio-desc">经典横屏</span>
+                        </button>
+                        <button class="ratio-btn" data-ratio="3:4" data-width="1200" data-height="1600">
+                            <span class="ratio-icon">📄</span>
+                            <span>3:4</span>
+                            <span class="ratio-desc">竖屏/小红书</span>
+                        </button>
+                        <button class="ratio-btn" data-ratio="1:1" data-width="1080" data-height="1080">
+                            <span class="ratio-icon">⬛</span>
+                            <span>1:1</span>
+                            <span class="ratio-desc">方形/Instagram</span>
+                        </button>
+                        <button class="ratio-btn" data-ratio="21:9" data-width="2560" data-height="1080">
+                            <span class="ratio-icon">🎬</span>
+                            <span>21:9</span>
+                            <span class="ratio-desc">超宽屏</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <h3>🖼️ 添加图片</h3>
+                    <div class="image-upload-controls">
+                        <input type="file" id="imageElementInput" accept="image/*" hidden>
+                        <button id="addImageBtn" class="btn-primary" style="width: 100%;">➕ 添加图片/Logo</button>
+                        
+                        <div id="imageControlsPanel" style="display: none; margin-top: 15px;">
+                            <label>
+                                <span>图片缩放：<span id="imageScaleValue">100</span>%</span>
+                                <input type="range" id="imageScale" min="10" max="300" value="100">
+                            </label>
+                            
+                            <label>
+                                <span>图片不透明度：<span id="imageOpacityValue">100</span>%</span>
+                                <input type="range" id="imageOpacity" min="0" max="100" value="100">
+                            </label>
+                            
+                            <button id="removeImageBtn" class="btn-secondary" style="width: 100%; margin-top: 10px;">🗑 删除选中图片</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <h3>✏️ 文字设置</h3>
+                    <div class="text-controls">
+                        <label>
+                            <span>文字内容：</span>
+                            <input type="text" id="textInput" placeholder="输入封面文字" value="你的标题">
+                        </label>
+                        
+                        <label>
+                            <span>字体：</span>
+                            <select id="fontSelect">
+                                <option value="'PingFang SC', 'Microsoft YaHei', sans-serif">苹方/微软雅黑</option>
+                                <option value="'STHeiti', 'SimHei', sans-serif">黑体</option>
+                                <option value="'STKaiti', 'KaiTi', serif">楷体</option>
+                                <option value="'STSong', 'SimSun', serif">宋体</option>
+                                <option value="'Arial Black', sans-serif">Arial Black</option>
+                                <option value="'Impact', sans-serif">Impact</option>
+                                <option value="'Georgia', serif">Georgia</option>
+                                <option value="'Comic Sans MS', cursive">Comic Sans</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>字号：<span id="fontSizeValue">72</span>px</span>
+                            <input type="range" id="fontSize" min="20" max="200" value="72">
+                        </label>
+
+                        <label>
+                            <span>文字颜色：</span>
+                            <input type="color" id="textColor" value="#ffffff">
+                        </label>
+
+                        <label>
+                            <span>描边颜色：</span>
+                            <input type="color" id="strokeColor" value="#000000">
+                        </label>
+
+                        <label>
+                            <span>描边宽度：<span id="strokeWidthValue">4</span>px</span>
+                            <input type="range" id="strokeWidth" min="0" max="20" value="4">
+                        </label>
+
+                        <label>
+                            <span>文字不透明度：<span id="textOpacityValue">100</span>%</span>
+                            <input type="range" id="textOpacity" min="0" max="100" value="100">
+                        </label>
+
+                        <div class="button-group">
+                            <button id="addTextBtn" class="btn-primary">➕ 添加文字</button>
+                            <button id="removeTextBtn" class="btn-secondary">🗑 删除选中</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <h3>🎨 图片调整</h3>
+                    <div class="image-controls">
+                        <div class="mode-switch">
+                            <button id="textModeBtn" class="mode-btn active">✏️ 文字编辑</button>
+                            <button id="bgModeBtn" class="mode-btn">🖼 背景调整</button>
+                        </div>
+                        
+                        <label>
+                            <span>背景缩放：<span id="bgScaleValue">100</span>%</span>
+                            <input type="range" id="bgScale" min="50" max="300" value="100">
+                        </label>
+                        
+                        <label>
+                            <span>背景模糊：<span id="blurValue">0</span>px</span>
+                            <input type="range" id="bgBlur" min="0" max="20" value="0">
+                        </label>
+                        
+                        <label>
+                            <span>亮度：<span id="brightnessValue">100</span>%</span>
+                            <input type="range" id="bgBrightness" min="0" max="200" value="100">
+                        </label>
+                        
+                        <button id="resetBgBtn" class="btn-secondary" style="width: 100%; margin-top: 10px;">🔄 重置背景位置</button>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <button id="downloadBtn" class="btn-download">⬇️ 下载封面</button>
+                </section>
+            </div>
+
+            <!-- 右侧画布区域 -->
+            <div class="canvas-area">
+                <div class="canvas-wrapper" id="canvasWrapper">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <p class="canvas-tip">💡 提示：可添加多张图片和文字，点击选中后拖动调整位置，通过左侧面板调整样式</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
