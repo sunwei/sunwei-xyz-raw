@@ -149,8 +149,19 @@
 		"version": "1.0",
 		"screenshot": "https://sunwei.xyz/mdf/tn_portfolio.png",
 		"download_url": "https://sunwei.xyz/mdf/portfolio_theme_east.zip?version=1.0",
-		"demo_url": "https://sunwei.xyz/mdf/themes/portfolio",
+		"demo_url": "https://sunwei.xyz",
 		"demo_notes_url": "https://sunwei.xyz/mdf/portfolio_example_east.zip?version=1.0",
 		"tags": ["Portfolio"]
+	},
+	{
+		"id": 14,
+		"name": "Company",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_company.png",
+		"download_url": "https://sunwei.xyz/mdf/company_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/company",
+		"demo_notes_url": "https://sunwei.xyz/mdf/company_example_east.zip?version=1.0",
+		"tags": ["Company"]
 	}
 ]
