@@ -1,0 +1,15 @@
+{
+  "name": "Dan Koe 一人公司",
+  "short_name": "Dan Koe 一人公司",
+  "start_url": "/books/yrgs/./",
+  "scope": "/books/yrgs/./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/books/yrgs/./favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
