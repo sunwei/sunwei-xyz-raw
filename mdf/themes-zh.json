@@ -177,5 +177,16 @@
 			"Book",
 			"Doc"
 		]
+	},
+	{
+		"id": 16,
+		"name": "Slides Focus",
+		"author": "MDFriday Team",
+		"version": "1.0",
+		"screenshot": "https://sunwei.xyz/mdf/tn_slides_focus.jpg",
+		"download_url": "https://sunwei.xyz/mdf/slides_focus_theme_east.zip?version=1.0",
+		"demo_url": "https://sunwei.xyz/mdf/themes/slides-focus",
+		"demo_notes_url": "https://sunwei.xyz/mdf/slides_focus_example.zip?version=1.0",
+		"tags": ["Slides"]
 	}
 ]
