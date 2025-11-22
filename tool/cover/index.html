@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>视频封面制作工具 - 小红书/B站/YouTube</title>
-  <script type="module" crossorigin src="/tool/cover/assets/index-BOXdrS77.js"></script>
-  <link rel="stylesheet" crossorigin href="/tool/cover/assets/index-DBpodmX1.css">
+  <script type="module" crossorigin src="/tool/cover/assets/index-CaIh330d.js"></script>
+  <link rel="stylesheet" crossorigin href="/tool/cover/assets/index-Cf_SGRF0.css">
 </head>
 <body>
     <div class="container">
@@ -65,6 +65,62 @@
                             <span>21:9</span>
                             <span class="ratio-desc">超宽屏</span>
                         </button>
+                    </div>
+                </section>
+
+                <section class="control-section">
+                    <h3>🏷️ 添加标签</h3>
+                    <div class="tag-controls">
+                        <div class="tag-templates">
+                            <button class="tag-template-btn" data-template="0">
+                                <span class="tag-template-icon">🔥</span>
+                                <span class="tag-template-name">实战</span>
+                            </button>
+                            <button class="tag-template-btn" data-template="1">
+                                <span class="tag-template-icon">📚</span>
+                                <span class="tag-template-name">学习</span>
+                            </button>
+                            <button class="tag-template-btn" data-template="2">
+                                <span class="tag-template-icon">✨</span>
+                                <span class="tag-template-name">新品</span>
+                            </button>
+                            <button class="tag-template-btn" data-template="3">
+                                <span class="tag-template-icon">🔥</span>
+                                <span class="tag-template-name">热门</span>
+                            </button>
+                            <button class="tag-template-btn" data-template="4">
+                                <span class="tag-template-icon">👍</span>
+                                <span class="tag-template-name">推荐</span>
+                            </button>
+                            <button class="tag-template-btn" data-template="5">
+                                <span class="tag-template-icon">⏰</span>
+                                <span class="tag-template-name">限时</span>
+                            </button>
+                        </div>
+                        
+                        <div id="tagEditPanel" style="display: none; margin-top: 15px;">
+                            <label>
+                                <span>标签文字：</span>
+                                <input type="text" id="tagTextInput" placeholder="输入标签文字" value="标签">
+                            </label>
+                            
+                            <label>
+                                <span>字体大小：<span id="tagFontSizeValue">32</span>px</span>
+                                <input type="range" id="tagFontSize" min="16" max="80" value="32">
+                            </label>
+                            
+                            <label>
+                                <span>标签缩放：<span id="tagScaleValue">100</span>%</span>
+                                <input type="range" id="tagScale" min="50" max="200" value="100">
+                            </label>
+                            
+                            <label>
+                                <span>不透明度：<span id="tagOpacityValue">100</span>%</span>
+                                <input type="range" id="tagOpacity" min="0" max="100" value="100">
+                            </label>
+                            
+                            <button id="removeTagBtn" class="btn-secondary" style="width: 100%; margin-top: 10px;">🗑 删除标签</button>
+                        </div>
                     </div>
                 </section>
 
@@ -172,6 +228,15 @@
                 </section>
 
                 <section class="control-section">
+                    <h3>📁 模板管理</h3>
+                    <div class="template-controls">
+                        <button id="saveTemplateBtn" class="btn-primary" style="width: 100%;">💾 保存为模板</button>
+                        <button id="loadTemplateBtn" class="btn-primary" style="width: 100%; margin-top: 10px;">📂 导入模板</button>
+                        <button id="showTemplatesBtn" class="btn-secondary" style="width: 100%; margin-top: 10px;">📋 我的模板</button>
+                    </div>
+                </section>
+
+                <section class="control-section">
                     <button id="downloadBtn" class="btn-download">⬇️ 下载封面</button>
                 </section>
             </div>
@@ -182,6 +247,19 @@
                     <canvas id="canvas"></canvas>
                 </div>
                 <p class="canvas-tip">💡 提示：可添加多张图片和文字，点击选中后拖动调整位置，通过左侧面板调整样式</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模板管理弹窗 -->
+    <div id="templateModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📋 我的模板</h3>
+                <button class="modal-close" onclick="document.getElementById('templateModal').style.display='none'">✕</button>
+            </div>
+            <div class="modal-body" id="templateList">
+                <!-- 模板列表将动态填充 -->
             </div>
         </div>
     </div>
