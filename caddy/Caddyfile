@@ -7,12 +7,12 @@
 }
 
 sunwei.xyz {
-	root * /root/web/sunwei-xyz-raw
+	root * /web/sunwei-xyz-raw
 	file_server
 }
 
 notes.sunwei.xyz {
-	root * /root/web/sunwei-xyz-raw/notes
+	root * /web/sunwei-xyz-raw/notes
 	file_server
 }
 
