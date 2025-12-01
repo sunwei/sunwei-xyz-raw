@@ -14,6 +14,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/00-summary.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/video/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/video/1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -22,7 +34,19 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/01-introduction.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/02-the-truth-about-jobs.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -34,7 +58,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/03-employment-vs-entrepreneurship.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/5.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/04-the-unignorability-of-money.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -42,7 +74,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/05-deep-generalism.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/7.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/06-levels-of-purpose.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -50,7 +90,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/07-progress-and-knowledge.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/9.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/08-your-lifes-work.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -58,7 +106,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/09-value-creation.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/11.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/10-the-meta-skill.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -66,7 +122,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/books/yrgs/purpose-profit/11-self-monetization.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/books/yrgs/docs/13.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/books/yrgs/purpose-profit/12-become-a-creator.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

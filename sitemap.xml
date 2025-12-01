@@ -14,7 +14,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/posts/001-how-it-works.html</loc>
+    <loc>/tags/一人公司/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/posts/001-safari.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
